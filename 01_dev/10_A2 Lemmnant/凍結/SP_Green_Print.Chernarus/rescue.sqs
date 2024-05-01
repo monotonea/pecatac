@@ -1,0 +1,30 @@
+titleText ["Are you Aleksandr Vershinin?", "PLAIN DOWN"];
+SALEM1 say["resq1",10];
+~5
+titleText ["Yes I am.You American?", "PLAIN DOWN"];
+Doc say["resq2",10];
+~5
+titleText ["Yeah,USMC.We're here to set you free.Come with me.", "PLAIN DOWN"];
+SALEM1 say["resq3",10];
+~8
+titleText ["OK,OK Don't be long here.", "PLAIN DOWN"];
+Doc say["resq4",10];
+~3
+
+[Doc] joinsilent SALEM;
+Doc enableAI  "MOVE";
+{_x assignAsCargo BMP}forEach units SALEM;
+~3
+tskObj0 setTaskState "SUCCEEDED";
+SALEM1 sideradio "pl3";
+~5
+[West,"HQ"] sideradio "HQ1";
+~5
+SALEM1 sideradio "pl4";
+~5
+[West,"HQ"] sideradio "HQ2";
+~5
+SALEM1 sideradio "pl5";
+player setcurrenttask tskObj1;
+taxi = true;
+exit

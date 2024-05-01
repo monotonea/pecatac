@@ -1,0 +1,123 @@
+execVM "briefing.sqf";
+0 fadesound 1;
+removeAllWeapons SALEM1;
+
+SALEM1 addmagazine "30Rnd_556x45_StanagSD";
+SALEM1 addmagazine "30Rnd_556x45_StanagSD";
+SALEM1 addmagazine "30Rnd_556x45_StanagSD";
+SALEM1 addmagazine "30Rnd_556x45_StanagSD";
+SALEM1 addmagazine "30Rnd_556x45_StanagSD";
+SALEM1 addmagazine "30Rnd_556x45_StanagSD";
+SALEM1 addmagazine "30Rnd_556x45_StanagSD";
+SALEM1 addmagazine "30Rnd_556x45_StanagSD";
+
+SALEM1 addmagazine "HandGrenade_West";
+SALEM1 addmagazine "HandGrenade_West";
+SALEM1 addmagazine "SmokeShell";
+SALEM1 addmagazine "SmokeShell";
+
+
+SALEM1 addmagazine "15Rnd_9x19_M9SD";
+SALEM1 addmagazine "15Rnd_9x19_M9SD";
+SALEM1 addmagazine "15Rnd_9x19_M9SD";
+SALEM1 addmagazine "15Rnd_9x19_M9SD";
+SALEM1 addmagazine "15Rnd_9x19_M9SD";
+SALEM1 addmagazine "15Rnd_9x19_M9SD";
+SALEM1 addmagazine "15Rnd_9x19_M9SD";
+SALEM1 addmagazine "15Rnd_9x19_M9SD";
+
+SALEM1 addweapon "M4A1_AIM_SD_camo";
+SALEM1 addweapon "M9SD";
+SALEM1 addweapon"Binocular";
+SALEM1 addweapon"NVGoggles";
+
+removeAllWeapons SALEM2;
+
+SALEM2 addmagazine "30Rnd_556x45_StanagSD";
+SALEM2 addmagazine "30Rnd_556x45_StanagSD";
+SALEM2 addmagazine "30Rnd_556x45_StanagSD";
+SALEM2 addmagazine "30Rnd_556x45_StanagSD";
+SALEM2 addmagazine "30Rnd_556x45_StanagSD";
+SALEM2 addmagazine "30Rnd_556x45_StanagSD";
+SALEM2 addmagazine "30Rnd_556x45_StanagSD";
+SALEM2 addmagazine "30Rnd_556x45_StanagSD";
+
+SALEM2 addmagazine "HandGrenade_West";
+SALEM2 addmagazine "HandGrenade_West";
+SALEM2 addmagazine "SmokeShell";
+SALEM2 addmagazine "SmokeShell";
+
+
+SALEM2 addmagazine "15Rnd_9x19_M9SD";
+SALEM2 addmagazine "15Rnd_9x19_M9SD";
+SALEM2 addmagazine "15Rnd_9x19_M9SD";
+SALEM2 addmagazine "15Rnd_9x19_M9SD";
+SALEM2 addmagazine "15Rnd_9x19_M9SD";
+SALEM2 addmagazine "15Rnd_9x19_M9SD";
+SALEM2 addmagazine "15Rnd_9x19_M9SD";
+SALEM2 addmagazine "15Rnd_9x19_M9SD";
+
+SALEM2 addweapon "M4A1_AIM_SD_camo";
+SALEM2 addweapon "M9SD";
+SALEM2 addweapon"Binocular";
+SALEM2 addweapon"NVGoggles";
+
+removeAllWeapons SALEM3;
+
+SALEM3 addmagazine "30Rnd_556x45_StanagSD";
+SALEM3 addmagazine "30Rnd_556x45_StanagSD";
+SALEM3 addmagazine "30Rnd_556x45_StanagSD";
+SALEM3 addmagazine "30Rnd_556x45_StanagSD";
+SALEM3 addmagazine "30Rnd_556x45_StanagSD";
+SALEM3 addmagazine "30Rnd_556x45_StanagSD";
+SALEM3 addmagazine "30Rnd_556x45_StanagSD";
+SALEM3 addmagazine "30Rnd_556x45_StanagSD";
+
+SALEM3 addmagazine "HandGrenade_West";
+SALEM3 addmagazine "HandGrenade_West";
+SALEM3 addmagazine "SmokeShell";
+SALEM3 addmagazine "SmokeShell";
+
+SALEM3 addmagazine "15Rnd_9x19_M9SD";
+SALEM3 addmagazine "15Rnd_9x19_M9SD";
+SALEM3 addmagazine "15Rnd_9x19_M9SD";
+SALEM3 addmagazine "15Rnd_9x19_M9SD";
+SALEM3 addmagazine "15Rnd_9x19_M9SD";
+SALEM3 addmagazine "15Rnd_9x19_M9SD";
+SALEM3 addmagazine "15Rnd_9x19_M9SD";
+SALEM3 addmagazine "15Rnd_9x19_M9SD";
+
+SALEM3 addweapon "M4A1_AIM_SD_camo";
+SALEM3 addweapon "M9SD";
+SALEM3 addweapon"Binocular";
+SALEM3 addweapon"NVGoggles";
+
+removeAllWeapons SALEM4;
+
+SALEM4 addmagazine "30Rnd_556x45_StanagSD";
+SALEM4 addmagazine "30Rnd_556x45_StanagSD";
+SALEM4 addmagazine "30Rnd_556x45_StanagSD";
+SALEM4 addmagazine "30Rnd_556x45_StanagSD";
+SALEM4 addmagazine "30Rnd_556x45_StanagSD";
+SALEM4 addmagazine "30Rnd_556x45_StanagSD";
+SALEM4 addmagazine "30Rnd_556x45_StanagSD";
+SALEM4 addmagazine "30Rnd_556x45_StanagSD";
+
+SALEM4 addmagazine "HandGrenade_West";
+SALEM4 addmagazine "HandGrenade_West";
+SALEM4 addmagazine "SmokeShell";
+SALEM4 addmagazine "SmokeShell";
+
+SALEM4 addmagazine "15Rnd_9x19_M9SD";
+SALEM4 addmagazine "15Rnd_9x19_M9SD";
+SALEM4 addmagazine "15Rnd_9x19_M9SD";
+SALEM4 addmagazine "15Rnd_9x19_M9SD";
+SALEM4 addmagazine "15Rnd_9x19_M9SD";
+SALEM4 addmagazine "15Rnd_9x19_M9SD";
+SALEM4 addmagazine "15Rnd_9x19_M9SD";
+SALEM4 addmagazine "15Rnd_9x19_M9SD";
+
+SALEM4 addweapon "M4A1_AIM_SD_camo";
+SALEM4 addweapon "M9SD";
+SALEM4 addweapon"Binocular";
+SALEM4 addweapon"NVGoggles";

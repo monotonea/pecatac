@@ -1,0 +1,23 @@
+[] exec "briefing.sqf";
+[] exec "markerpos.sqs";
+
+tk1d moveindriver tk1;
+tk1g moveingunner tk1;
+tk1l moveInTurret [tk1, [0,1]];
+
+tk2c moveInTurret [tk2, [0,0]];
+tk2d moveindriver tk2;
+tk2g moveingunner tk2;
+tk2l moveInTurret [tk2, [0,1]];
+
+tk3c moveInTurret [tk3, [0,0]];
+tk3d moveindriver tk3;
+tk3g moveingunner tk3;
+tk3l moveInTurret [tk3, [0,1]];
+
+tk4c moveInTurret [tk4, [0,0]];
+tk4d moveindriver tk4;
+tk4g moveingunner tk4;
+tk4l moveInTurret [tk4, [0,1]];
+
+exit

@@ -1,0 +1,39 @@
+﻿//ACEスペクテーター　descriptionに書く
+// respawn = "bird"; respawnTemplates[] = {"ace_spectator"};
+
+author="PeCa Tactical Lowbrow";
+OnLoadName = "CO12 Zaros";
+
+overviewText="市街地に隠匿された迫撃砲を破壊せよ";
+
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "You successfully completed all mission objectives.";
+	};
+};
+
+//	ミッションパラメータ選択
+class Params {
+	class time {		//paramsArray[0]	スタートタイムの選択
+		title = "Start time";
+		values[] = {-6,0,6,12};
+		texts[] = {"Dawn","Noon","Dusk","Night"};
+	default = 0;
+	};
+	class weather {		//paramsArray[1]	天気の選択
+		title = "Weather Condition";
+		values[] = {0,1,2,3,4,5,6,7,8,9,10};
+		texts[] = {"0.0 (Best)","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9","1.0 (Worst)"};
+	default = 0;
+	};
+	class fog {			//paramsArray[2]	霧の選択
+		title = "Fog";
+		values[] = {0,1,2,3,4,5,6,7,8,9,10};
+		texts[] = {"0.0 (Best)","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9","1.0 (Worst)"};
+	default = 0;
+	};
+};

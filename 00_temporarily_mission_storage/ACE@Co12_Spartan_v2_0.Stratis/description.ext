@@ -1,0 +1,55 @@
+﻿respawn = "bird";
+respawnTemplates[] = {"ace_spectator"};
+
+class Header
+{
+	gameType = COOP; //game type
+	minPlayers = 1; //min # of players the mission supports
+	maxPlayers = 12; //max # of players the mission supports
+};
+
+author="JagaHunter";
+OnLoadName = "The Spartan";
+OnLoadMission = "敵地を突破せよ！";
+loadScreen = "loadScreen.jpg";
+overviewPicture = "loadScreen.jpg";
+
+class CfgNotifications
+{
+
+	class Task1Accomplished
+	{
+		title = "TASK ACCOMPLISHED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "第一目標制圧";
+		color[] = {0.6,0.8,0.4,1};
+	};
+	class Task2Accomplished
+	{
+		title = "TASK ACCOMPLISHED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "第二目標制圧";
+		color[] = {0.6,0.8,0.4,1};
+	};
+	class Task3Accomplished
+	{
+		title = "TASK ACCOMPLISHED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "第三目標制圧";
+		color[] = {0.6,0.8,0.4,1};
+	};
+
+};
+
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "すべての拠点を制圧した";
+		description = "";
+		pictureBackground = "loadscreen.jpg";
+		picture = "";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+};

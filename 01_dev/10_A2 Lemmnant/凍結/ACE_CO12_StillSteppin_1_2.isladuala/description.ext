@@ -1,0 +1,54 @@
+#include "f\common\f_spect\spectating.hpp"
+
+class CfgRadio
+{
+	sounds[] = {};
+
+	class r01sol01
+	{
+	name = "";
+	sound[] = {};
+	title = "Swonto defence to H.Q.The civilians have arrived.Request evacuation,over.";
+	};
+	
+	class r01hq01
+	{
+	name = "";
+	sound[] = {};
+	title = "This is H.Q.We understood that and copters are on the way.ETA 15 minutes,out.";
+	};
+	
+	class r02sol01
+	{
+	name = "";
+	sound[] = {};
+	title = "Roger that,out.";
+	};
+  
+	class r02hq01
+	{
+	name = "";
+	sound[] = {};
+	title = "H.Q. to Swonto defence,a Black Hawk got an engine trouble.It takes more 15 minutes for your evac,over.";
+	};
+	
+};
+
+class Params
+{
+        class DayTime
+        {
+                title = "Time Of Day";
+                values[] = {0,5,10};
+                texts[] = {"Midday","Dust","Night Time"};
+                default = 0;
+        };
+};
+
+
+class Header
+{
+gameType = Coop;
+minPlayers = 1;
+maxPlayers = 12;
+};

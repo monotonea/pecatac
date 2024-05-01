@@ -1,0 +1,55 @@
+class CfgNotifications
+{
+	class Task1Current
+	{
+		title = "CURRENT TASK";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+		description = "Secure POW";
+		color[] = {1,1,1,1};
+	};
+	class Task2Current
+	{
+		title = "CURRENT TASK";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+		description = "Evac from AO";
+		color[] = {1,1,1,1};
+	};
+	
+	class TaskCanceled
+	{
+		title = "TASK CANCELED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIconcanceled_ca.paa";
+		description = "";
+		color[] = {0.75,0.75,0.75,1};
+	};
+	class TaskCreated
+	{
+		title = "TASK CREATED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIconcreated_ca.paa";
+		description = "";
+		color[] = {1,1,1,1};
+	};
+	class Task1Accomplished
+	{
+		title = "TASK ACCOMPLISHED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "Secure POW";
+		color[] = {0.6,0.8,0.4,1};
+	};
+	class Task2Accomplished
+	{
+		title = "TASK ACCOMPLISHED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "Evac from AO";
+		color[] = {0.6,0.8,0.4,1};
+	};
+	class Task1Failed
+	{
+		title = "TASK FAILED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIconfailed_ca.paa";
+		description = "Secure POW";
+		color[] = {0.8,0.4,0.4,1};
+	};
+};respawn = "bird";
+respawnTemplates[] = {"ace_spectator"};
+overviewText = "Eliminate a rebel leader with a support from UH-1Y";

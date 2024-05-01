@@ -1,0 +1,39 @@
+//ACEスペクテーター　descriptionに書く
+// respawn = "bird"; respawnTemplates[] = {"ace_spectator"};
+
+
+author="PeCa Tactical Lowbrow";
+OnLoadName = "RHS Mounting";
+
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "You successfully completed all mission objectives.";
+	};
+	class End2
+	{
+		title = "Mission failed";
+		subtitle = "";
+		description = "";
+	};
+};
+
+class CfgRadio
+{
+	sounds[] = {};
+	class RadioMsg1
+	{
+		name = "";
+		sound[] = {};
+		title = "This is Udushenie. IRINA! say again. IRINA!";
+	};
+	class RadioMsg2
+	{
+		name = "";
+		sound[] = {};
+		title = "This is Zadenitsi. Roger. We are taking off! ETA 5 Minute.";
+	};
+};

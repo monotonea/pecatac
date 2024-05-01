@@ -1,0 +1,193 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"chernarus",
+		"jsrs_m134",
+		"cacharacters2",
+		"CAWheeled"
+	};
+	addOnsAuto[]=
+	{
+		"CAWheeled",
+		"cacharacters2",
+		"chernarus"
+	};
+	randomSeed=2544519;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+	class Groups
+	{
+		items=2;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5236.1714,181.97331,3676.7332};
+					azimut=323.061;
+					special="NONE";
+					id=0;
+					side="WEST";
+					vehicle="HMMWV_M2";
+					player="PLAYER GUNNER";
+					leader=1;
+					skill=0.2;
+					text="veh";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={5239.3306,181.49113,3669.8025};
+					special="NONE";
+					id=1;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					leader=1;
+					skill=0.2;
+					init="this moveInCargo veh";
+				};
+				class Item1
+				{
+					position[]={5244.2817,181.18011,3667.3252};
+					special="NONE";
+					id=2;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					skill=0.2;
+				};
+			};
+		};
+	};
+	class Sensors
+	{
+		items=3;
+		class Item0
+		{
+			position[]={5310.1045,168.2412,3517.783};
+			a=0;
+			b=0;
+			activationBy="ALPHA";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="n=[veh,150,30,true] spawn bis_fnc_unitCapture";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={5352.1567,161.34413,3520.0837};
+			a=0;
+			b=0;
+			activationBy="BRAVO";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="n=[]execVM ""play.sqf""";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={5388.104,158.23752,3517.7739};
+			a=0;
+			b=0;
+			activationBy="CHARLIE";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="n=[]call bis_fnc_help";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"chernarus"
+	};
+	addOnsAuto[]=
+	{
+		"chernarus"
+	};
+	randomSeed=3524024;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"chernarus"
+	};
+	addOnsAuto[]=
+	{
+		"chernarus"
+	};
+	randomSeed=9344356;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"chernarus"
+	};
+	addOnsAuto[]=
+	{
+		"chernarus"
+	};
+	randomSeed=9721701;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};

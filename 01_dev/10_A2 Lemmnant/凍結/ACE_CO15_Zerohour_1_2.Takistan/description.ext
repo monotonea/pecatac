@@ -1,0 +1,21 @@
+
+loadScreen = "";
+#include "f\common\f_spect\spectating.hpp"
+
+class Params
+{
+        class AryD
+        {
+                title = " Artillery Difficulty";
+                values[] = {0,1};
+                texts[] = {"Easy (semi-auto calculate)","Hard (manual calculate)"};
+                default = 1;
+        };
+};
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 15;
+};

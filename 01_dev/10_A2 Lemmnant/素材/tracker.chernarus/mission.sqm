@@ -1,0 +1,280 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"cacharacters2",
+		"chernarus"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters2",
+		"chernarus"
+	};
+	randomSeed=2981715;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+	class Groups
+	{
+		items=3;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4263.9619,299.17294,6620.585};
+					id=0;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={3971.7041,304.20398,8029.1938};
+					id=1;
+					side="WEST";
+					vehicle="USMC_Soldier_SL";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.59999996;
+					init="{nul = [_x] execVM ""tracker.sqf""}forEach units group this;";
+				};
+				class Item1
+				{
+					position[]={3974.7041,304.18454,8024.1938};
+					id=2;
+					side="WEST";
+					vehicle="USMC_Soldier_TL";
+					rank="SERGEANT";
+					skill=0.46666664;
+				};
+				class Item2
+				{
+					position[]={3976.7041,304.20972,8024.1938};
+					id=3;
+					side="WEST";
+					vehicle="USMC_Soldier_AR";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item3
+				{
+					position[]={3978.7041,304.23373,8024.1938};
+					id=4;
+					side="WEST";
+					vehicle="USMC_Soldier_LAT";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item4
+				{
+					position[]={3980.7041,304.25772,8024.1938};
+					id=5;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					skill=0.2;
+				};
+				class Item5
+				{
+					position[]={3983.7041,304.29105,8024.1938};
+					id=6;
+					side="WEST";
+					vehicle="USMC_Soldier_TL";
+					rank="SERGEANT";
+					skill=0.46666664;
+				};
+			};
+			class Waypoints
+			{
+				items=2;
+				class Item0
+				{
+					position[]={4440.3345,310.11926,7979.6929};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={3653.8335,316.16354,9479.418};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={5144.6841,345.5318,7921.8188};
+					id=7;
+					side="EAST";
+					vehicle="RU_Soldier_SL";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.59999996;
+					init="{nul = [_x] execVM ""tracker.sqf""}forEach units group this;";
+				};
+				class Item1
+				{
+					position[]={5147.6841,345.41495,7916.8188};
+					id=8;
+					side="EAST";
+					vehicle="RU_Soldier_MG";
+					rank="SERGEANT";
+					skill=0.46666664;
+				};
+				class Item2
+				{
+					position[]={5149.6841,345.45697,7916.8188};
+					id=9;
+					side="EAST";
+					vehicle="RU_Soldier_AT";
+					rank="SERGEANT";
+					skill=0.46666664;
+				};
+				class Item3
+				{
+					position[]={5151.6841,345.49963,7916.8188};
+					id=10;
+					side="EAST";
+					vehicle="RU_Soldier_LAT";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item4
+				{
+					position[]={5153.6841,345.53439,7916.8188};
+					id=11;
+					side="EAST";
+					vehicle="RU_Soldier_GL";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item5
+				{
+					position[]={5155.6841,345.56372,7916.8188};
+					id=12;
+					side="EAST";
+					vehicle="RU_Soldier_Marksman";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+			};
+			class Waypoints
+			{
+				items=2;
+				class Item0
+				{
+					position[]={4457.0708,308.10501,7977.0249};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={5454.7612,336.19241,9455.5117};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"chernarus"
+	};
+	addOnsAuto[]=
+	{
+		"chernarus"
+	};
+	randomSeed=7141019;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"chernarus"
+	};
+	addOnsAuto[]=
+	{
+		"chernarus"
+	};
+	randomSeed=1745351;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"chernarus"
+	};
+	addOnsAuto[]=
+	{
+		"chernarus"
+	};
+	randomSeed=2313514;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};

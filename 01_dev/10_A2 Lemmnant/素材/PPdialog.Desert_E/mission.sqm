@@ -1,0 +1,113 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"cacharacters_e",
+		"desert_e"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters_e",
+		"desert_e"
+	};
+	randomSeed=9495408;
+	class Intel
+	{
+		startWeather=0;
+		forecastWeather=0;
+		year=2012;
+		month=6;
+		day=16;
+		hour=12;
+		minute=0;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1373.6921,41.135971,1408.9072};
+					id=0;
+					side="WEST";
+					vehicle="US_Soldier_TL_EP1";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"desert_e"
+	};
+	addOnsAuto[]=
+	{
+		"desert_e"
+	};
+	randomSeed=9722553;
+	class Intel
+	{
+		startWeather=0;
+		forecastWeather=0;
+		year=2012;
+		month=6;
+		day=16;
+		hour=12;
+		minute=0;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"desert_e"
+	};
+	addOnsAuto[]=
+	{
+		"desert_e"
+	};
+	randomSeed=9108136;
+	class Intel
+	{
+		startWeather=0;
+		forecastWeather=0;
+		year=2012;
+		month=6;
+		day=16;
+		hour=12;
+		minute=0;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"desert_e"
+	};
+	addOnsAuto[]=
+	{
+		"desert_e"
+	};
+	randomSeed=3399276;
+	class Intel
+	{
+		startWeather=0;
+		forecastWeather=0;
+		year=2012;
+		month=6;
+		day=16;
+		hour=12;
+		minute=0;
+	};
+};

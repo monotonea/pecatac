@@ -1,0 +1,16 @@
+class CfgRadio
+{
+ sounds[] = {};
+ class cap1
+ {
+	name = "";
+	sound[] = {};
+	title = "$c01";
+ };
+  class cap2
+  {
+   name = "";
+    sound[] = {};
+    title = "$c02";
+  };
+};

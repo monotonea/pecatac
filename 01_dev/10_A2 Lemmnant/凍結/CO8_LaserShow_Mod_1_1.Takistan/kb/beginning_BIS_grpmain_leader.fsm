@@ -1,0 +1,119 @@
+/*%FSM<COMPILE "C:\Bis\fsmeditor\scriptedFSM.cfg, PREDLOHA">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"React",0,4346,-150.000000,-125.000000,-50.000000,-75.000000,0.000000,"React"};
+item1[] = {"",7,210,-103.999969,46.000004,-96.000031,53.999992,0.000000,""};
+item2[] = {"__",8,218,-250.000000,25.000000,-150.000000,75.000000,0.000000,"-"};
+item3[] = {"END",1,250,-250.000000,100.000000,-150.000000,150.000000,0.000000,"END"};
+item4[] = {"beginning_Q_0",4,218,0.000000,25.000000,100.000000,75.000000,1.000000,"beginning_Q_0"};
+item5[] = {"beginning_C_0",1,250,150.000000,25.000000,250.000000,75.000000,0.000000,"beginning_C_0"};
+item6[] = {"beginning_C_0",4,218,0.000000,100.000000,100.000000,150.000000,1.000000,"beginning_C_0"};
+item7[] = {"beginning_P_1",1,250,150.000000,100.000000,250.000000,150.000000,0.000000,"beginning_P_1"};
+link0[] = {0,1};
+link1[] = {1,2};
+link2[] = {1,4};
+link3[] = {1,6};
+link4[] = {2,3};
+link5[] = {4,5};
+link6[] = {6,7};
+globals[] = {25.000000,1,0,0,0,640,480,2,14,6316128,1,-605.370728,502.659729,716.784790,-391.245483,873,899,1};
+window[] = {2,-1,-1,-1,-1,880,-1136,-114,144,3,890};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "PREDLOHA";
+  class States
+  {
+    /*%FSM<STATE "React">*/
+    class React
+    {
+      name = "React";
+      itemno = 0;
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "beginning_Q_0">*/
+        class beginning_Q_0
+        {
+          itemno = 4;
+          priority = 1.000000;
+          to="beginning_C_0";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_sentenceID == ""beginning_Q_0"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "beginning_C_0">*/
+        class beginning_C_0
+        {
+          itemno = 6;
+          priority = 1.000000;
+          to="beginning_P_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_sentenceID == ""beginning_C_0"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__">*/
+        class __
+        {
+          itemno = 2;
+          priority = 0.000000;
+          to="END";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "END">*/
+    class END
+    {
+      name = "END";
+      itemno = 3;
+      init = /*%FSM<STATEINIT""">*/"//hint""Unexpected Exception""" \n
+       "" \n
+       "debugLog ""VD31- here B"";"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "beginning_C_0">*/
+    class beginning_C_0
+    {
+      name = "beginning_C_0";
+      itemno = 5;
+      init = /*%FSM<STATEINIT""">*/"bis_command kbtell [BIS_grpmain_leader, ""beginning"",""beginning_C_0""]"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "beginning_P_1">*/
+    class beginning_P_1
+    {
+      name = "beginning_P_1";
+      itemno = 7;
+      init = /*%FSM<STATEINIT""">*/"BIS_grpbravo_leader kbtell [BIS_grpmain_leader, ""beginning"",""beginning_P_1""]"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="React";
+  finalStates[] =
+  {
+    "END",
+    "beginning_C_0",
+    "beginning_P_1",
+  };
+};
+/*%FSM</COMPILE>*/

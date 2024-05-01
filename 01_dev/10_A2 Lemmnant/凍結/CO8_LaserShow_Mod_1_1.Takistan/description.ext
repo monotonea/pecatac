@@ -1,0 +1,13 @@
+onLoadMission = $STR_EP1_description.ext0_33;
+loadScreen = "ca\Missions_e\scenarios\SPE1_LaserShow.Takistan\loading_LaserShow_CO.paa";
+
+#include "f\common\f_spect\spectating.hpp"
+respawn=4;
+respawnDelay=10;
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 8;
+};

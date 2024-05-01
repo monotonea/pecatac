@@ -1,0 +1,6 @@
+
+disableUserInput true
+
+tk1 setPos [ getPos logic2 select 0, getPos logic2 select 1,getPos logic2 select 2]
+tk1 setdir 170
+exit

@@ -1,0 +1,250 @@
+class CfgSounds
+{
+ sounds[] = {
+cap1v,cap2v,cap3v,cap4v,cap5v,cap6v,cap7v,cap8v,cap9v,cap10v,cap11v,pl1v,pl2v
+};   
+ class resq1
+  {
+   name = "resq1";
+   sound[] = {"\sound\resq1.wav",1, 1};
+   titles[] = {};
+  }; 
+
+ class resq2
+  {
+   name = "resq2";
+   sound[] = {"\sound\resq2.wav",1, 1};
+   titles[] = {};
+  }; 
+
+ class resq3
+  {
+   name = "resq3";
+   sound[] = {"\sound\resq3.wav",1, 1};
+   titles[] = {};
+  }; 
+
+ class resq4
+  {
+   name = "resq4";
+   sound[] = {"\sound\resq4.wav",1, 1};
+   titles[] = {};
+  }; 
+
+  class cap1v
+  {
+   name = "cap1v";
+   sound[] = {"\sound\cap1.wav",db+100, 1};
+   titles[] = {};
+  }; 
+  class cap2v
+  {
+   name = "cap2v";
+   sound[] = {"\sound\cap2.wav",db+1, 1};
+   titles[] = {};
+  }; 
+  class cap3v
+  {
+   name = "cap3v";
+   sound[] = {"\sound\cap3.wav",db+1, 1};
+   titles[] = {};
+  }; 
+  class cap4v
+  {
+   name = "cap4v";
+   sound[] = {"\sound\cap4.wav",db+1,1};
+   titles[] = {};
+  }; 
+  class cap5v
+  {
+   name = "cap5v";
+   sound[] = {"\sound\cap5.wav",db+60, 1};
+   titles[] = {};
+  }; 
+  class cap6v
+  {
+   name = "cap6v";
+   sound[] = {"\sound\cap6.wav",db+60, 1};
+   titles[] = {};
+  }; 
+  class cap7v
+  {
+   name = "cap7v";
+   sound[] = {"\sound\cap7.wav",db+60, 1};
+   titles[] = {};
+  }; 
+  class cap8v
+  {
+   name = "cap8v";
+   sound[] = {"\sound\cap8.wav",db+60, 1};
+   titles[] = {};
+  }; 
+  class cap9v
+  {
+   name = "cap9v";
+   sound[] = {"\sound\cap9.wav",db+60, 1};
+   titles[] = {};
+  }; 
+  class cap10v
+  {
+   name = "cap10v";
+   sound[] = {"\sound\cap10.wav",30, 1};
+   titles[] = {};
+  }; 
+  class cap11v
+  {
+   name = "cap11v";
+   sound[] = {"\sound\cap11.wav",30, 1};
+   titles[] = {};
+  };
+  class pl1v
+  {
+   name = "pl1v";
+   sound[] = {"\sound\pl1.wav",30, 1};
+   titles[] = {};
+  };
+  class pl2v
+  {
+   name = "pl2v";
+   sound[] = {"\sound\pl2.wav",30, 1};
+   titles[] = {};
+  };
+};
+
+class CfgRadio
+{
+ sounds[] = {};
+  class cap1
+  {
+   name = "";
+    sound[] = {};
+    title = "Good evening guys.Let's start the briefing.I ask you to save a civilian";
+  };
+
+  class cap2
+  {
+   name = "";
+   sound[] = {};
+   title = "Why the mission was orderd you is too hard to local army.";
+  };
+
+  class cap3
+  {
+   name = "";
+   sound[] = {};
+   title = "The problem is sensitive.A scientist who studys chemistry in Chernogorsk was abducted by Chedaki yesterday.";
+  };
+
+  class cap4
+  {
+   name = "";
+   sound[] = {};
+   title = "They may be willing to have chemical warfare capability.";
+  };
+
+  class cap5
+  {
+   name = "";
+   sound[] = {};
+   title = "Of course,We can't stand to let terrorists have WMD,but we must consider civilian lives too.";
+  };
+
+  class cap6
+  {
+   name = "";
+   sound[] = {};
+   title = "So,the action shouldn't noticed.This point is hard for CDF.";
+  };
+
+  class cap7
+  {
+   name = "";
+   sound[] = {};
+   title = "Infiltrate soundlessly,save the scientist.Did you follow me?";
+  };
+
+  class cap8
+  {
+   name = "";
+   sound[] = {};
+   title = "You'll be sent Landing Zone 1km far from the cage by chopper,LZ and destination is marked on your map,";
+  };
+
+  class cap9
+  {
+   name = "";
+   sound[] = {};
+   title = "When you saved the chemist,make a move to meeting point.CDF's APC is going to pick you up.";
+  };
+
+
+
+  class cap10
+  {
+   name = "";
+   sound[] = {};
+   title = "Any questions?";
+  };
+
+
+  class cap11
+  {
+   name = "";
+   sound[] = {};
+   title = "Good,Your callsign is SALEM.Call me if you want.Dismiss!";
+  };
+
+  class pl1
+  {
+   name = "";
+   sound[] = {};
+   title = "Yes sir.How do we do that operation?";
+  };
+
+  class pl2
+  {
+   name = "";
+   sound[] = {};
+   title = "Nothing for the moment.";
+  };
+
+  class pl3
+  {
+   name = "";
+   sound[] = {"\sound\pl3.wav",30,1};
+   title = "This is SALEM1,SALEM1 to HQ.Go ahead.";
+  };
+
+  class pl4
+  {
+   name = "";
+   sound[] = {"\sound\pl4.wav",30,1};
+   title = "We've succeeded in saveing Vershinin.over.";
+  };
+
+
+  class pl5
+  {
+   name = "";
+   sound[] = {"\sound\pl5.wav",30,1};
+   title = "Roger that,out.";
+  };
+
+
+  class HQ1
+  {
+   name = "";
+   sound[] = {"\sound\HQ1.wav",30,1};
+   title = "HQ to SALEM,What is going on?";
+  };
+
+
+  class HQ2
+  {
+   name = "";
+   sound[] = {"\sound\HQ2.wav",30,1};
+   title = "Awesome works! I call CDF to send an APC for your taxi.";
+  };
+
+
+};

@@ -1,0 +1,119 @@
+/*%FSM<COMPILE "C:\Bis\fsmeditor\scriptedFSM.cfg, PREDLOHA">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"React",0,250,-150.000000,-125.000000,-50.000000,-75.000000,0.000000,"React"};
+item1[] = {"",7,210,-103.999969,46.000008,-96.000031,53.999992,0.000000,""};
+item2[] = {"__",8,218,-250.000000,25.000000,-150.000000,75.000000,0.000000,"-"};
+item3[] = {"END",1,250,-250.000000,100.000000,-150.000000,150.000000,0.000000,"END"};
+item4[] = {"Alpha_team_to_Revolver",4,218,-25.000000,25.000000,275.000000,75.000000,1.000000,"Alpha team to Revolver, we have eliminated all resistance. Awaiting further orders, over."};
+item5[] = {"You_are_to_wait",1,250,300.000000,25.000000,600.000000,75.000000,0.000000,"You are to wait in the village, I'm sending a chopper your way to extract you. How copy?"};
+item6[] = {"You_are_to_wait",4,218,-25.000000,100.000000,275.000000,150.000000,1.000000,"You are to wait in the village, I'm sending a chopper your way to extract you. How copy?"};
+item7[] = {"Copy_that__waiting",1,4346,300.000000,100.000000,600.000000,150.000000,0.000000,"Copy that, waiting for extraction. Alpha out." \n "Everyone to the bird, move it! Go! Go! Go!"};
+link0[] = {0,1};
+link1[] = {1,2};
+link2[] = {1,4};
+link3[] = {1,6};
+link4[] = {2,3};
+link5[] = {4,5};
+link6[] = {6,7};
+globals[] = {25.000000,1,0,0,0,640,480,2,12,6316128,1,-255.147964,642.356628,627.933167,-296.301178,739,899,1};
+window[] = {2,-1,-1,-1,-1,904,-1112,-90,168,3,756};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "PREDLOHA";
+  class States
+  {
+    /*%FSM<STATE "React">*/
+    class React
+    {
+      name = "React";
+      itemno = 0;
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Alpha_team_to_Revolver">*/
+        class Alpha_team_to_Revolver
+        {
+          itemno = 4;
+          priority = 1.000000;
+          to="You_are_to_wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_sentenceId in [""extraction_P_0""]);"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "You_are_to_wait">*/
+        class You_are_to_wait
+        {
+          itemno = 6;
+          priority = 1.000000;
+          to="Copy_that__waiting";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_sentenceId in [""extraction_C_0""]);"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__">*/
+        class __
+        {
+          itemno = 2;
+          priority = 0.000000;
+          to="END";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "END">*/
+    class END
+    {
+      name = "END";
+      itemno = 3;
+      init = /*%FSM<STATEINIT""">*/"//hint""Unexpected Exception""" \n
+       "" \n
+       "debugLog ""VD31- here B"";"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "You_are_to_wait">*/
+    class You_are_to_wait
+    {
+      name = "You_are_to_wait";
+      itemno = 5;
+      init = /*%FSM<STATEINIT""">*/"_this kbTell [_from, _topic,""extraction_C_0""];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Copy_that__waiting">*/
+    class Copy_that__waiting
+    {
+      name = "Copy_that__waiting";
+      itemno = 7;
+      init = /*%FSM<STATEINIT""">*/" _this kbTell [_from, _topic,""extraction_P_1""];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="React";
+  finalStates[] =
+  {
+    "END",
+    "You_are_to_wait",
+    "Copy_that__waiting",
+  };
+};
+/*%FSM</COMPILE>*/

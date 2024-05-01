@@ -1,0 +1,754 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"CAAir",
+		"CAAir3_Su34",
+		"chernarus",
+		"ca_modules_clouds",
+		"ca_modules_e_weather"
+	};
+	addOnsAuto[]=
+	{
+		"CAAir",
+		"CAAir3_Su34",
+		"ca_modules_clouds",
+		"ca_modules_e_weather",
+		"chernarus"
+	};
+	randomSeed=2492152;
+	class Intel
+	{
+		briefingName="SKY CAGE v1.1 [ENVIRONMENT]""";
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=6;
+		minute=0;
+	};
+	class Groups
+	{
+		items=16;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={2381.3979,40.095268,2501.0288};
+					special="FLY";
+					id=0;
+					side="WEST";
+					vehicle="AV8B2";
+					leader=1;
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+				class Item1
+				{
+					position[]={2424.1074,57.926739,2454.8677};
+					special="FLY";
+					id=1;
+					side="WEST";
+					vehicle="AV8B2";
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+				class Item2
+				{
+					position[]={2457.8816,66.246376,2455.9824};
+					special="FLY";
+					id=2;
+					side="WEST";
+					vehicle="AV8B2";
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7241.25,242.07603,5350.5132};
+					type="SAD";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={2874.6516,0.26221073,-542.0144};
+					special="FLY";
+					id=3;
+					side="WEST";
+					vehicle="AV8B2";
+					leader=1;
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+				class Item1
+				{
+					position[]={3049.3171,0.077664599,-619.04956};
+					special="FLY";
+					id=4;
+					side="WEST";
+					vehicle="AV8B2";
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+				class Item2
+				{
+					position[]={2957.7644,-0.011236474,-615.18018};
+					special="FLY";
+					id=5;
+					side="WEST";
+					vehicle="AV8B2";
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7880.6274,212.45128,5300.9966};
+					type="SAD";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={16786.176,-0.069321051,7083.3018};
+					special="FLY";
+					id=6;
+					side="EAST";
+					vehicle="Su34";
+					leader=1;
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+				class Item1
+				{
+					position[]={16944.287,0.54912865,7009.8018};
+					special="FLY";
+					id=7;
+					side="EAST";
+					vehicle="Su34";
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+				class Item2
+				{
+					position[]={16857.172,0.23230854,7010.041};
+					special="FLY";
+					id=8;
+					side="EAST";
+					vehicle="Su34";
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9567.6436,271.47403,5733.7734};
+					type="SAD";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item3
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={14386.434,0.14320803,10598.612};
+					special="FLY";
+					id=9;
+					side="EAST";
+					vehicle="Su34";
+					leader=1;
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+				class Item1
+				{
+					position[]={14535.398,0.53465647,10522.259};
+					special="FLY";
+					id=10;
+					side="EAST";
+					vehicle="Su34";
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9074.1289,330.03305,5816.1196};
+					type="SAD";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item4
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6303.54,374.63333,6660.1323};
+					id=12;
+					side="LOGIC";
+					vehicle="BIS_clouds_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item5
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6500.5645,364.18451,6662.1899};
+					id=13;
+					side="LOGIC";
+					vehicle="WeatherParticlesManager";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item6
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6403.1426,376.89673,6655.9956};
+					id=14;
+					side="LOGIC";
+					vehicle="WeatherPostprocessManager";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item7
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6294.5,363.12421,6558.2935};
+					special="NONE";
+					id=15;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					init="skipTime (random 12);0 setOvercast (random 0.5);";
+				};
+			};
+		};
+		class Item8
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={7347.1836,0.40610382,1443.7478};
+					special="FLY";
+					id=16;
+					side="WEST";
+					vehicle="AV8B2";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+				class Item1
+				{
+					position[]={7389.8931,0.069652274,1397.5867};
+					special="FLY";
+					id=17;
+					side="WEST";
+					vehicle="AV8B2";
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+				class Item2
+				{
+					position[]={7423.667,0.35448027,1398.7014};
+					special="FLY";
+					id=18;
+					side="WEST";
+					vehicle="AV8B2";
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8451.5566,192.5639,5270.6665};
+					type="SAD";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item9
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={10128.456,0.25354195,-2442.1064};
+					special="FLY";
+					id=19;
+					side="WEST";
+					vehicle="AV8B2";
+					leader=1;
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+				class Item1
+				{
+					position[]={10171.166,0.3318038,-2488.2676};
+					special="FLY";
+					id=20;
+					side="WEST";
+					vehicle="AV8B2";
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+				class Item2
+				{
+					position[]={10204.939,0.20177481,-2487.1528};
+					special="FLY";
+					id=21;
+					side="WEST";
+					vehicle="AV8B2";
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8969.998,226.98122,5228.0464};
+					type="SAD";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item10
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={13718.308,0.28668967,-1352.5282};
+					special="FLY";
+					id=22;
+					side="WEST";
+					vehicle="AV8B2";
+					leader=1;
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+				class Item1
+				{
+					position[]={13761.019,0.051927924,-1398.6893};
+					special="FLY";
+					id=23;
+					side="WEST";
+					vehicle="AV8B2";
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+				class Item2
+				{
+					position[]={13794.792,0.4291088,-1397.5746};
+					special="FLY";
+					id=24;
+					side="WEST";
+					vehicle="AV8B2";
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9463.9824,157.06599,5223.5864};
+					type="SAD";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item11
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={8622.5205,108.73985,12575.41};
+					special="FLY";
+					id=25;
+					side="EAST";
+					vehicle="Su34";
+					leader=1;
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+				class Item1
+				{
+					position[]={8780.6328,119.71289,12501.91};
+					special="FLY";
+					id=26;
+					side="EAST";
+					vehicle="Su34";
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+				class Item2
+				{
+					position[]={8693.5166,122.32127,12502.15};
+					special="FLY";
+					id=27;
+					side="EAST";
+					vehicle="Su34";
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8576.4971,271.75043,5816.1431};
+					type="SAD";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item12
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={5275.4956,227.46968,11662.975};
+					special="FLY";
+					id=28;
+					side="EAST";
+					vehicle="Su34";
+					leader=1;
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+				class Item1
+				{
+					position[]={5424.4604,236.52972,11586.621};
+					special="FLY";
+					id=29;
+					side="EAST";
+					vehicle="Su34";
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+				class Item2
+				{
+					position[]={5336.3989,238.85127,11587.762};
+					special="FLY";
+					id=30;
+					side="EAST";
+					vehicle="Su34";
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7918.9868,220.15173,5825.9312};
+					type="SAD";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item13
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={2140.5574,264.77219,9265.2451};
+					special="FLY";
+					id=31;
+					side="EAST";
+					vehicle="Su34";
+					leader=1;
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+				class Item1
+				{
+					position[]={2298.6677,266.62842,9191.7451};
+					special="FLY";
+					id=32;
+					side="EAST";
+					vehicle="Su34";
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+				class Item2
+				{
+					position[]={2211.553,267.77603,9191.9844};
+					special="FLY";
+					id=33;
+					side="EAST";
+					vehicle="Su34";
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7278.5039,276.73419,5804.7939};
+					type="SAD";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item14
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6404.4878,383.2952,6553.3413};
+					special="NONE";
+					id=34;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					init="crafts = [];arrayInit = true;";
+				};
+			};
+		};
+		class Item15
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9752.167,265.70358,9339.1758};
+					special="FLY";
+					id=11;
+					side="EAST";
+					vehicle="Su34";
+					leader=1;
+					skill=0.60000002;
+					init="_nul = [this] execVM ""airinit.sqf"";";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8367.042,336.83936,6386.2949};
+					type="SAD";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={6296.7026,362.52399,6773.6045};
+			a=0;
+			b=0;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="false";
+			expActiv="nul = [] execVM ""cam1.sqf"";";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"chernarus"
+	};
+	addOnsAuto[]=
+	{
+		"chernarus"
+	};
+	randomSeed=15822801;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"chernarus"
+	};
+	addOnsAuto[]=
+	{
+		"chernarus"
+	};
+	randomSeed=15578500;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"chernarus"
+	};
+	addOnsAuto[]=
+	{
+		"chernarus"
+	};
+	randomSeed=2496560;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};

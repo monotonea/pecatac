@@ -1,0 +1,181 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"a3_map_stratis",
+		"A3_Armor_F_Panther",
+		"A3_Weapons_F_Explosives"
+	};
+	addOnsAuto[]=
+	{
+		"A3_Armor_F_Panther",
+		"A3_Weapons_F_Explosives",
+		"a3_map_stratis"
+	};
+	randomSeed=16407530;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1710.3296,5.5,5686.812};
+					azimut=20;
+					id=0;
+					side="WEST";
+					vehicle="B_APC_Tracked_01_rcws_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					init="totalCount = 0;mAct=this addAction [""Laying mines"",""mineLayer.sqf"",[this,20,30,7,10],0,true,false,""""];";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=1;
+		class Item0
+		{
+			position[]={1759.1384,5.5,5697.3721};
+			id=1;
+			side="EMPTY";
+			vehicle="ATMine";
+			leader=1;
+			skill=0.60000002;
+			text="mine";
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={1761.9338,5.5,5715.4004};
+			a=0;
+			b=0;
+			activationBy="ALPHA";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="hint format[""%1"",typeof mine];";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"a3_map_stratis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_stratis"
+	};
+	randomSeed=16549757;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"a3_map_stratis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_stratis"
+	};
+	randomSeed=6617039;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"a3_map_stratis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_stratis"
+	};
+	randomSeed=8782121;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};

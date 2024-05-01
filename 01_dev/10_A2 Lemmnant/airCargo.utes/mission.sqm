@@ -1,0 +1,174 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"cacharacters2",
+		"utes",
+		"CAWheeled",
+		"CAAir2_UH1Y",
+		"jsrs_m134"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters2",
+		"CAWheeled",
+		"CAAir2_UH1Y",
+		"utes"
+	};
+	randomSeed=8117175;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+	class Groups
+	{
+		items=3;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3625.5227,19,3598.8831};
+					special="FLY";
+					id=0;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3722.0999,19,3606.3623};
+					special="NONE";
+					id=1;
+					side="WEST";
+					vehicle="HMMWV_M2";
+					leader=1;
+					skill=0.60000002;
+					text="car";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3531.9639,18.944542,3574.4546};
+					special="FLY";
+					id=2;
+					side="WEST";
+					vehicle="UH1Y";
+					leader=1;
+					skill=0.60000002;
+					text="UH";
+				};
+			};
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={3425.0083,19,3595.3967};
+			a=0;
+			b=0;
+			activationBy="ALPHA";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="nul=[UH,car] execVM ""airCargo.sqf"";";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=16181542;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=14627450;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=4510985;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};

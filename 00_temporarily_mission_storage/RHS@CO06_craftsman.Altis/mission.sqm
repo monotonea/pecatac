@@ -1,0 +1,7243 @@
+version=52;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=9;
+	class ItemIDProvider
+	{
+		nextID=318;
+	};
+	class MarkerIDProvider
+	{
+		nextID=4;
+	};
+	class Camera
+	{
+		pos[]={12025.246,83.75164,15708.286};
+		dir[]={0.15032564,-0.41672429,0.89663315};
+		up[]={0.068912283,0.90900892,0.41104457};
+		aside[]={0.98633832,5.664624e-007,-0.16536684};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Characters_F",
+	"rhsusf_c_troops",
+	"rhs_c_weapons",
+	"A3_Weapons_F",
+	"A3_Weapons_F_Items",
+	"A3_Soft_F_Gamma_Van_01",
+	"A3_Soft_F_Bootcamp_Van_01",
+	"A3_Structures_F_EPA_Civ_Camping",
+	"A3_Structures_F_Items_Tools",
+	"A3_Structures_F_Items_Vessels",
+	"A3_Structures_F_EPA_Items_Tools",
+	"A3_Structures_F_EPB_Civ_Camping",
+	"A3_Weapons_F_Ammoboxes",
+	"A3_Modules_F_Intel",
+	"A3_Ui_F",
+	"rhs_c_troops",
+	"A3_Structures_F_Heli_Furniture",
+	"A3_Structures_F_Heli_Civ_Constructions",
+	"A3_Structures_F_Civ_Market"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=13;
+		class Item0
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item1
+		{
+			className="rhsusf_c_troops";
+			name="RHSUSF Infantry & Equipment";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item2
+		{
+			className="rhs_c_weapons";
+			name="AFRF Weapons Pack";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item3
+		{
+			className="A3_Weapons_F";
+			name="Arma 3 Alpha - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item4
+		{
+			className="A3_Soft_F_Gamma";
+			name="Arma 3 - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item5
+		{
+			className="A3_Soft_F_Bootcamp";
+			name="Arma 3 Bootcamp Update - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item6
+		{
+			className="A3_Structures_F_EPA";
+			name="Arma 3 Survive Episode - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item7
+		{
+			className="A3_Structures_F";
+			name="Arma 3 - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item8
+		{
+			className="A3_Structures_F_EPB";
+			name="Arma 3 Adapt Episode - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item9
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item10
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item11
+		{
+			className="rhs_c_troops";
+			name="AFRF Infantry & Equipment";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item12
+		{
+			className="A3_Structures_F_Heli";
+			name="Arma 3 Helicopters - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+	};
+};
+randomSeed=9185239;
+class ScenarioData
+{
+	author="Lowbrow";
+	overviewText="爆弾職人を抹殺せよ";
+	forceRotorLibSimulation=1;
+	class Header
+	{
+		gameType="Coop";
+		minPlayers=1;
+		maxPlayers=10;
+	};
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=2;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="EndMission";
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="None";
+							};
+						};
+					};
+				};
+			};
+		};
+		nAttributes=1;
+	};
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2015;
+		month=6;
+		day=24;
+		hour=5;
+		minute=-20;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=112;
+		class Item0
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12434.073,24.916008,15550.24};
+						angles[]={0,3.1874201,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="ok = [this, EAST, 10, 200, false] execVM ""Scripts\IEDman.sqf"";";
+						stance="Middle";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="rhs_uniform_g3_blk";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="B_Carryall_khk";
+								isBackpack=1;
+							};
+							goggles="G_Balaclava_blk";
+						};
+					};
+					id=25;
+					type="I_Survivor_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=24;
+		};
+		class Item1
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12304.04,24.89324,15702.299};
+						angles[]={0,0.41883805,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="ok = [this, EAST, 10, 200, false] execVM ""Scripts\IEDman.sqf"";";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="rhs_uniform_g3_blk";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="B_Carryall_khk";
+								isBackpack=1;
+							};
+							goggles="G_Balaclava_blk";
+						};
+					};
+					id=27;
+					type="I_Survivor_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=26;
+		};
+		class Item2
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12387.003,24.445971,15607.912};
+						angles[]={0,5.785121,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="ok = [this, EAST, 10, 200, false] execVM ""Scripts\IEDman.sqf"";";
+						stance="Middle";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="rhs_uniform_g3_blk";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="B_Carryall_khk";
+								isBackpack=1;
+							};
+							goggles="G_Balaclava_blk";
+						};
+					};
+					id=29;
+					type="I_Survivor_F";
+					atlOffset=8.9645386e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12389.689,24.407768,15603.637};
+					};
+					side="Independent";
+					flags=5;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=121;
+					type="I_G_Soldier_F";
+					atlOffset=1.1444092e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=28;
+			atlOffset=8.9645386e-005;
+		};
+		class Item3
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12348.227,26.842525,15630.867};
+				angles[]={6.2791882,1.3106899,0.039985489};
+			};
+			side="Independent";
+			flags=6;
+			class Attributes
+			{
+				init="ok = [this, EAST, 10, 300, false] execVM ""Scripts\IEDcar.sqf"";";
+			};
+			id=30;
+			type="I_G_Van_01_fuel_F";
+		};
+		class Item4
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12348.301,24.986958,15630.915};
+						angles[]={6.2791882,1.3106899,0.039985489};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+					};
+					id=31;
+					type="I_G_Soldier_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=31;
+						item1=30;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+				};
+			};
+			id=32;
+		};
+		class Item5
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12337.726,24.10681,15594.257};
+						angles[]={0,5.4889908,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="ok = [this, EAST, 10, 150, false] execVM ""Scripts\IEDman.sqf"";";
+						stance="Middle";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="rhs_uniform_g3_blk";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="B_Carryall_khk";
+								isBackpack=1;
+							};
+							goggles="G_Balaclava_blk";
+						};
+					};
+					id=34;
+					type="I_Survivor_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=33;
+		};
+		class Item6
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12410.641,25.30172,15597.603};
+						angles[]={0,5.4889908,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="ok = [this, EAST, 10, 200, false] execVM ""Scripts\IEDman.sqf"";";
+						stance="Middle";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="rhs_uniform_g3_blk";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="B_Carryall_khk";
+								isBackpack=1;
+							};
+							goggles="G_Balaclava_blk";
+						};
+					};
+					id=36;
+					type="I_Survivor_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=35;
+		};
+		class Item7
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12412.351,28.042049,15633.571};
+				angles[]={0,1.5488423,6.2810569};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=40;
+			type="Land_WoodenTable_large_F";
+		};
+		class Item8
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12412.822,28.615358,15633.7};
+				angles[]={0,0,6.2810569};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=44;
+			type="Land_DrillAku_F";
+			atlOffset=0.8645916;
+		};
+		class Item9
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12414.305,27.743965,15633.476};
+				angles[]={0,0,6.2810569};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=45;
+			type="Land_Bucket_painted_F";
+			atlOffset=1.9073486e-006;
+		};
+		class Item10
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12414.506,27.743536,15633.805};
+				angles[]={0,0,6.2810569};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=46;
+			type="Land_Bucket_clean_F";
+			atlOffset=1.9073486e-006;
+		};
+		class Item11
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12414.153,27.705404,15633.742};
+				angles[]={0,0,6.2810569};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=47;
+			type="Land_ButaneCanister_F";
+		};
+		class Item12
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12412.891,27.708092,15633.904};
+				angles[]={0,0,6.2810569};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=48;
+			type="Land_ButaneCanister_F";
+		};
+		class Item13
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12412.413,28.605555,15633.478};
+				angles[]={0,0,6.2810569};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=49;
+			type="Land_ButaneTorch_F";
+			atlOffset=0.8645916;
+		};
+		class Item14
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12411.535,27.959314,15630.563};
+				angles[]={0,0,6.2810569};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=50;
+			type="Land_CanisterPlastic_F";
+			atlOffset=1.9073486e-006;
+		};
+		class Item15
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12412.271,27.957748,15631.188};
+				angles[]={0,3.8874531,6.2810569};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=51;
+			type="Land_CanisterPlastic_F";
+		};
+		class Item16
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12411.488,27.959414,15631.13};
+				angles[]={0,4.1927137,6.2810569};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=52;
+			type="Land_CanisterPlastic_F";
+		};
+		class Item17
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12412.71,28.498581,15633.466};
+				angles[]={0,0,6.2810569};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=53;
+			type="Land_DuctTape_F";
+		};
+		class Item18
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12416.994,27.985029,15630.273};
+				angles[]={0,3.271996,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=55;
+			type="Land_FireExtinguisher_F";
+			atlOffset=3.4200134;
+		};
+		class Item19
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12417.341,27.984293,15630.282};
+				angles[]={0,4.7361941,6.2810569};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=57;
+			type="Land_FireExtinguisher_F";
+		};
+		class Item20
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12411.446,28.594946,15633.225};
+				angles[]={0,0,6.2810569};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=61;
+			type="Land_Camping_Light_F";
+		};
+		class Item21
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12419.822,27.593853,15630.532};
+				angles[]={0,1.4167863,6.2810569};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=63;
+			type="B_Carryall_cbr";
+		};
+		class Item22
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12418.921,27.595772,15630.59};
+				angles[]={0,4.0929565,6.2810569};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=64;
+			type="B_Carryall_khk";
+		};
+		class Item23
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12418.591,27.596474,15630.352};
+				angles[]={0,3.2588329,6.2810569};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=65;
+			type="B_Kitbag_cbr";
+		};
+		class Item24
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12414.185,27.953754,15639.088};
+				angles[]={0,0,6.2810569};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=77;
+			type="Land_CanisterPlastic_F";
+			atlOffset=8.0108643e-005;
+		};
+		class Item25
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12414.921,27.952106,15639.714};
+				angles[]={0,3.8874531,6.2810569};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=78;
+			type="Land_CanisterPlastic_F";
+		};
+		class Item26
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12414.138,27.953775,15639.655};
+				angles[]={0,4.1927137,6.2810569};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=79;
+			type="Land_CanisterPlastic_F";
+			atlOffset=1.9073486e-006;
+		};
+		class Item27
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12415.471,27.950937,15638.049};
+				angles[]={4.5697327,0.17438328,6.2810569};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=80;
+			type="Land_CanisterPlastic_F";
+		};
+		class Item28
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12415.641,27.950575,15639.498};
+				angles[]={3.1415946,0.50831568,4.8225832};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=81;
+			type="Land_CanisterPlastic_F";
+		};
+		class Item29
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12414.869,27.957317,15639.16};
+				angles[]={0,3.9551504,6.2810569};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=82;
+			type="Land_CanisterPlastic_F";
+			atlOffset=0.0051002502;
+		};
+		class Item30
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12412.355,27.611181,15641.994};
+						angles[]={0,4.9508891,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=84;
+					type="I_G_Soldier_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=83;
+		};
+		class Item31
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12419.252,27.617744,15637.289};
+						angles[]={0,1.9475111,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=86;
+					type="I_G_Soldier_F";
+					atlOffset=0.021240234;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=85;
+			atlOffset=0.021240234;
+		};
+		class Item32
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12415.34,24.184385,15638.811};
+					};
+					side="Independent";
+					flags=3;
+					class Attributes
+					{
+						presence=0.50426763;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=88;
+					type="I_G_Soldier_F";
+					atlOffset=0.84600067;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=87;
+			atlOffset=0.84600067;
+		};
+		class Item33
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12412.178,24.19161,15643.281};
+						angles[]={0,2.8238032,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						presence=0.50426763;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=90;
+					type="I_G_Soldier_F";
+					atlOffset=6.4849854e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=89;
+			atlOffset=6.4849854e-005;
+		};
+		class Item34
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12416.816,24.181673,15631.453};
+						angles[]={0,4.9886599,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=92;
+					type="I_G_Soldier_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=91;
+		};
+		class Item35
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12413.2,24.189369,15633.348};
+						angles[]={0,3.4616895,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=94;
+					type="I_G_Soldier_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=93;
+		};
+		class Item36
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12361.319,24.694496,15583.311};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_pkm";
+								class primaryMuzzleMag
+								{
+									name="rhs_100Rnd_762x54mmR";
+									ammoLeft=100;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla2_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_TacVest_blk";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_100Rnd_762x54mmR";
+										count=1;
+										ammoLeft=100;
+									};
+								};
+							};
+							class backpack
+							{
+								typeName="B_AssaultPack_blk";
+								isBackpack=1;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_100Rnd_762x54mmR";
+										count=2;
+										ammoLeft=100;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Bandanna_khk";
+						};
+					};
+					id=96;
+					type="I_G_Soldier_AR_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12363.324,24.720913,15581.659};
+					};
+					side="Independent";
+					flags=5;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=98;
+					type="I_G_Soldier_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12360.216,24.658884,15581.062};
+					};
+					side="Independent";
+					flags=5;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=108;
+					type="I_G_Soldier_F";
+				};
+				class Item3
+				{
+					dataType="Waypoint";
+					position[]={12361.643,24.758051,15585.308};
+					type="Guard";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=109;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=95;
+		};
+		class Item37
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12447.312,22.050301,15628.572};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_pkm";
+								class primaryMuzzleMag
+								{
+									name="rhs_100Rnd_762x54mmR";
+									ammoLeft=100;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla2_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_TacVest_blk";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_100Rnd_762x54mmR";
+										count=1;
+										ammoLeft=100;
+									};
+								};
+							};
+							class backpack
+							{
+								typeName="B_AssaultPack_blk";
+								isBackpack=1;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_100Rnd_762x54mmR";
+										count=2;
+										ammoLeft=100;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Bandanna_khk";
+						};
+					};
+					id=111;
+					type="I_G_Soldier_AR_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12449.316,22.047003,15626.921};
+					};
+					side="Independent";
+					flags=5;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=112;
+					type="I_G_Soldier_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12446.208,22.081602,15626.323};
+					};
+					side="Independent";
+					flags=5;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=113;
+					type="I_G_Soldier_F";
+				};
+				class Item3
+				{
+					dataType="Waypoint";
+					position[]={12447.635,22.043461,15630.569};
+					type="Guard";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=114;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=110;
+		};
+		class Item38
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12384.019,21.416552,15836.161};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=127;
+					type="I_G_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12386.569,21.300707,15833.312};
+					};
+					side="Independent";
+					flags=5;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=140;
+					type="I_G_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item2
+				{
+					dataType="Waypoint";
+					position[]={12384.354,21.463697,15839.487};
+					type="Dismiss";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=141;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=126;
+		};
+		class Item39
+		{
+			dataType="Trigger";
+			position[]={12417.048,24.723408,15561.847};
+			class Attributes
+			{
+				text="objcheck";
+				condition="!alive target";
+				onActivation="end = true;";
+				sizeA=0;
+				sizeB=0;
+			};
+			id=128;
+			type="EmptyDetector";
+		};
+		class Item40
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={12412.897,24.713406,15561.669};
+				angles[]={0.0058185509,0,0.020759506};
+			};
+			id=129;
+			type="ModuleTaskSetState_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleTaskSetState_F_State";
+					expression="_this setVariable ['State',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="SUCCEEDED";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item41
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={12412.647,24.822021,15556.348};
+				angles[]={0,0,6.2811141};
+			};
+			id=130;
+			type="ModuleTaskCreate_F";
+			atlOffset=0.00016021729;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleTaskCreate_F_Destination";
+					expression="_this setVariable ['Destination',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleTaskCreate_F_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleTaskCreate_F_Marker";
+					expression="_this setVariable ['Marker',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleTaskCreate_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="抹殺";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleTaskCreate_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="自爆リュック職人を抹殺せよ";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ModuleTaskCreate_F_ID";
+					expression="_this setVariable ['ID',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="task1";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="ModuleTaskCreate_F_AlwaysVisible";
+					expression="_this setVariable ['AlwaysVisible',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="ModuleTaskCreate_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="ModuleTaskCreate_F_State";
+					expression="_this setVariable ['State',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="CREATED";
+						};
+					};
+				};
+				nAttributes=10;
+			};
+		};
+		class Item42
+		{
+			dataType="Marker";
+			position[]={12011.88,0,15839.281};
+			name="marker_1";
+			type="mil_start";
+			colorName="ColorBlue";
+			id=131;
+			atlOffset=-27.794165;
+		};
+		class Item43
+		{
+			dataType="Trigger";
+			position[]={12359.365,24.848927,15613.293};
+			class Attributes
+			{
+				condition="end";
+				onActivation="[""end1""] call BIS_fnc_endMission;";
+				sizeA=0;
+				sizeB=0;
+				timeout[]={6,6,6};
+			};
+			id=133;
+			type="EmptyDetector";
+			atlOffset=1.9073486e-006;
+		};
+		class Item44
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12539.972,23.56151,15554.929};
+						angles[]={0.0066671576,5.4183049,0.026651176};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+					};
+					id=135;
+					type="I_G_Soldier_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=135;
+						item1=136;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+				};
+			};
+			id=134;
+		};
+		class Item45
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12539.922,25.41778,15554.9};
+				angles[]={0.0066671576,5.4183049,0.026651176};
+			};
+			side="Independent";
+			flags=6;
+			class Attributes
+			{
+				init="ok = [this, EAST, 10, 200, false] execVM ""Scripts\IEDcar.sqf"";";
+			};
+			id=136;
+			type="I_G_Van_01_fuel_F";
+		};
+		class Item46
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12539.436,23.573084,15551.796};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akm_gp25";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_leader";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="rhs_VOG25";
+										count=3;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_TacVest_blk";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=11;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="1Rnd_HE_Grenade_shell";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item5
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item6
+									{
+										name="1Rnd_Smoke_Grenade_shell";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item7
+									{
+										name="1Rnd_SmokeGreen_Grenade_shell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item8
+									{
+										name="1Rnd_SmokeRed_Grenade_shell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item9
+									{
+										name="1Rnd_SmokeBlue_Grenade_shell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item10
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=3;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Booniehat_khk";
+						};
+					};
+					id=138;
+					type="I_G_Soldier_TL_F";
+					atlOffset=0.0049934387;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=137;
+			atlOffset=0.0049934387;
+		};
+		class Item47
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12016.493,28.008001,15837.984};
+				angles[]={6.2751846,0,6.2765174};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="ammobox";
+			};
+			id=132;
+			type="Box_NATO_Ammo_F";
+			atlOffset=3.8146973e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""rhs_30Rnd_545x39_AK""],[30]],[[""FirstAidKit""],[20]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item48
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=6;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12014.386,27.7197,15834.85};
+						angles[]={0,6.2817478,0};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_ak74m_gp25";
+								muzzle="rhs_acc_dtk";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_545x39_7N10_AK";
+									ammoLeft=30;
+								};
+							};
+							class handgun
+							{
+								name="rhs_weap_makarov_pm";
+								class primaryMuzzleMag
+								{
+									name="rhs_mag_9x18_8_57N181S";
+									ammoLeft=8;
+								};
+							};
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="rhs_uniform_msv_emr";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="rhs_1PN138";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="rhs_6b23_digi_6sh92_headset_mapcase";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=6;
+									class Item0
+									{
+										name="rhs_30Rnd_545x39_7N10_AK";
+										count=7;
+										ammoLeft=30;
+									};
+									class Item1
+									{
+										name="rhs_mag_9x18_8_57N181S";
+										count=1;
+										ammoLeft=8;
+									};
+									class Item2
+									{
+										name="rhs_mag_rdg2_white";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="rhs_mag_rgn";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_VOG25";
+										count=5;
+										ammoLeft=1;
+									};
+									class Item5
+									{
+										name="rhs_GRD40_White";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							gps="ItemGPS";
+							headgear="rhs_6b27m_green";
+						};
+					};
+					id=143;
+					type="rhs_msv_emr_sergeant";
+					atlOffset=4.7683716e-005;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12010.419,27.725559,15831.466};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						isPlayable=1;
+					};
+					id=173;
+					type="rhs_msv_emr_efreitor";
+					atlOffset=4.3869019e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12012.192,27.708469,15831.426};
+						angles[]={0,0.020017345,0};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						isPlayable=1;
+					};
+					id=144;
+					type="rhs_msv_emr_machinegunner";
+					atlOffset=-0.00018882751;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12015.78,27.68199,15831.367};
+						angles[]={6.2751913,0.020018926,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						isPlayable=1;
+					};
+					id=248;
+					type="rhs_msv_emr_grenadier_rpg";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12017.554,27.672825,15831.345};
+						angles[]={6.2818484,0.020011146,6.2765174};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						isPlayable=1;
+					};
+					id=162;
+					type="rhs_msv_emr_LAT";
+					atlOffset=2.0980835e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12019.348,27.660618,15831.226};
+						angles[]={6.2818484,0.020011146,6.2765174};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						isPlayable=1;
+					};
+					id=174;
+					type="rhs_msv_emr_medic";
+					atlOffset=-7.0571899e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=142;
+			atlOffset=4.7683716e-005;
+		};
+		class Item49
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12388.148,25.403334,15504.175};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=151;
+					type="I_G_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12389.153,25.401516,15507.554};
+					};
+					side="Independent";
+					flags=5;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=152;
+					type="I_G_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item2
+				{
+					dataType="Waypoint";
+					position[]={12389.313,25.620026,15499.499};
+					type="Dismiss";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=153;
+					atlOffset=0.014614105;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=150;
+		};
+		class Item50
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12443.949,74.084175,15203.086};
+						angles[]={0,4.7715678,0.022662206};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+					};
+					id=155;
+					type="I_G_Soldier_F";
+					atlOffset=-0.0001373291;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=155;
+						item1=156;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+				};
+			};
+			id=154;
+			atlOffset=-0.00015258789;
+		};
+		class Item51
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12443.895,75.940422,15203.04};
+				angles[]={0,4.7715678,0.022662206};
+			};
+			side="Independent";
+			flags=6;
+			class Attributes
+			{
+				init="ok = [this, EAST, 10, 100, false] execVM ""Scripts\IEDcar.sqf"";";
+			};
+			id=156;
+			type="I_G_Van_01_fuel_F";
+			atlOffset=-0.00015258789;
+		};
+		class Item52
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12459.513,74.301109,15199.11};
+						angles[]={0,1.5813233,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=158;
+					type="I_G_Soldier_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=157;
+		};
+		class Item53
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12427.519,73.751053,15199.192};
+						angles[]={0,3.6500063,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=160;
+					type="I_G_Soldier_F";
+					atlOffset=0.0079956055;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=159;
+			atlOffset=0.0079956055;
+		};
+		class Item54
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12232.087,22.855675,15697.813};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=184;
+					type="C_man_polo_4_F";
+					atlOffset=-0.00012016296;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=183;
+			atlOffset=-0.00012016296;
+		};
+		class Item55
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12238.845,21.367214,15816.394};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=186;
+					type="C_man_polo_4_F";
+					atlOffset=-0.00037384033;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=185;
+			atlOffset=-0.00037384033;
+		};
+		class Item56
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12327.778,22.89809,15736.884};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						placementRadius=30;
+					};
+					id=188;
+					type="C_man_polo_1_F";
+					atlOffset=-0.00016975403;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=187;
+			atlOffset=-0.00016975403;
+		};
+		class Item57
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12329.222,21.878162,15861.034};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=190;
+					type="C_man_polo_1_F";
+					atlOffset=-0.00022125244;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=189;
+			atlOffset=-0.00022125244;
+		};
+		class Item58
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12310.797,23.863609,15583.767};
+						angles[]={0,4.8623405,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=194;
+					type="C_man_polo_1_F";
+					atlOffset=0.0098838806;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=193;
+			atlOffset=0.0098838806;
+		};
+		class Item59
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12425.594,21.617558,15671.332};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=196;
+					type="C_man_polo_1_F";
+					atlOffset=0.00065040588;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=195;
+			atlOffset=0.00065040588;
+		};
+		class Item60
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12360.906,20.978519,15797.118};
+						angles[]={0,0.082024984,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=198;
+					type="C_man_polo_1_F";
+					atlOffset=7.0571899e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=197;
+			atlOffset=7.0571899e-005;
+		};
+		class Item61
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12456.803,20.167362,15720.181};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=200;
+					type="C_man_polo_1_F";
+					atlOffset=-0.00057029724;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=199;
+			atlOffset=-0.00057029724;
+		};
+		class Item62
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12453.67,25.29047,15540.841};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=202;
+					type="C_man_polo_1_F";
+					atlOffset=-4.9591064e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=201;
+			atlOffset=-4.9591064e-005;
+		};
+		class Item63
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12379.458,21.526518,15733.429};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=204;
+					type="C_man_polo_1_F";
+					atlOffset=-0.0024662018;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=203;
+			atlOffset=-0.0024662018;
+		};
+		class Item64
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12356.09,24.903793,15643.682};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=206;
+					type="C_man_polo_4_F";
+					atlOffset=-0.010129929;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=205;
+			atlOffset=-0.010129929;
+		};
+		class Item65
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12445.496,22.616991,15602.513};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=208;
+					type="C_man_polo_4_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=207;
+		};
+		class Item66
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12105.085,25.506023,15833.359};
+						angles[]={0,4.806355,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=210;
+					type="C_man_polo_4_F";
+					atlOffset=2.6702881e-005;
+				};
+				class Item1
+				{
+					dataType="Waypoint";
+					position[]={11926.795,30.211823,15842.877};
+					speed="FULL";
+					combat="CARELESS";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=211;
+					type="Move";
+					atlOffset=5.531311e-005;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=209;
+			atlOffset=2.6702881e-005;
+		};
+		class Item67
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12416.977,28.740917,15552.641};
+						angles[]={0,5.7603579,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="this disableAI ""move""";
+						name="target";
+						stance="Middle";
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_aks74u_folded";
+								muzzle="rhs_acc_pgs64_74u";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_545x39_AK";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_BG_Guerrilla_6_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_30Rnd_545x39_AK";
+										count=2;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							goggles="G_Bandanna_aviator";
+						};
+					};
+					id=220;
+					type="I_G_Soldier_A_F";
+					atlOffset=0.020917892;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=219;
+			atlOffset=0.020917892;
+		};
+		class Item68
+		{
+			dataType="Marker";
+			position[]={12413.172,24.730579,15560.7};
+			name="marker_2";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorRed";
+			alpha=0.56047207;
+			fillName="FDiagonal";
+			a=200;
+			b=300;
+			id=212;
+		};
+		class Item69
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12411.125,29.159683,15553.526};
+						angles[]={0,1.541224,0};
+					};
+					side="Independent";
+					flags=3;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=224;
+					type="I_G_Soldier_F";
+					atlOffset=0.42756081;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=223;
+			atlOffset=0.42756081;
+		};
+		class Item70
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12409.706,25.360741,15555.564};
+						angles[]={0,1.1272383,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						stance="Middle";
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=226;
+					type="I_G_Soldier_F";
+					atlOffset=0.045694351;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=225;
+			atlOffset=0.045694351;
+		};
+		class Item71
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12409.714,25.397282,15559.524};
+						angles[]={0,5.7117915,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						presence=0.4593043;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=228;
+					type="I_G_Soldier_F";
+					atlOffset=0.17224884;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=227;
+			atlOffset=0.17224884;
+		};
+		class Item72
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12418.621,28.727205,15559.641};
+						angles[]={0,3.670867,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						stance="Middle";
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=230;
+					type="I_G_Soldier_F";
+					atlOffset=0.01061058;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=229;
+			atlOffset=0.01061058;
+		};
+		class Item73
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12414.998,28.714949,15557.156};
+						angles[]={0,3.2105849,0};
+					};
+					side="Independent";
+					flags=3;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=232;
+					type="I_G_Soldier_F";
+					atlOffset=3.4108639;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=231;
+			atlOffset=3.4108639;
+		};
+		class Item74
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12409.14,28.834753,15552.828};
+						angles[]={0,0.19872299,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=234;
+					type="I_G_Soldier_F";
+					atlOffset=0.098518372;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=233;
+			atlOffset=0.098518372;
+		};
+		class Item75
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12325.344,24.299149,15590.172};
+						angles[]={0,0.70545524,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=236;
+					type="I_G_Soldier_F";
+					atlOffset=0.21307182;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=235;
+			atlOffset=0.21307182;
+		};
+		class Item76
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12317.803,24.027317,15592.98};
+						angles[]={0,3.2105849,0};
+					};
+					side="Independent";
+					flags=3;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=240;
+					type="I_G_Soldier_F";
+					atlOffset=0.30623436;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=239;
+			atlOffset=0.30623436;
+		};
+		class Item77
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12314.051,24.193981,15591.684};
+						angles[]={0,6.1068869,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=242;
+					type="I_G_Soldier_F";
+					atlOffset=0.045122147;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=241;
+			atlOffset=0.045122147;
+		};
+		class Item78
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12361.534,24.783342,15547.405};
+						angles[]={0,5.4889908,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="ok = [this, EAST, 10, 150, false] execVM ""Scripts\IEDman.sqf"";";
+						stance="Middle";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="rhs_uniform_g3_blk";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="B_Carryall_khk";
+								isBackpack=1;
+							};
+							goggles="G_Balaclava_blk";
+						};
+					};
+					id=251;
+					type="I_Survivor_F";
+					atlOffset=0.10920525;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=250;
+			atlOffset=0.10920525;
+		};
+		class Item79
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12426.906,20.066868,15792.937};
+						angles[]={0,5.4889908,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="ok = [this, EAST, 10, 150, false] execVM ""Scripts\IEDman.sqf"";";
+						stance="Middle";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="rhs_uniform_g3_blk";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="B_Carryall_khk";
+								isBackpack=1;
+							};
+							goggles="G_Balaclava_blk";
+						};
+					};
+					id=253;
+					type="I_Survivor_F";
+					atlOffset=9.5367432e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=252;
+			atlOffset=9.5367432e-006;
+		};
+		class Item80
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12409.837,26.286503,15492.682};
+						angles[]={0,1.1310955,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="ok = [this, EAST, 10, 150, false] execVM ""Scripts\IEDman.sqf"";";
+						stance="Up";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="rhs_uniform_g3_blk";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="B_Carryall_khk";
+								isBackpack=1;
+							};
+							goggles="G_Balaclava_blk";
+						};
+					};
+					id=255;
+					type="I_Survivor_F";
+					atlOffset=3.4332275e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=254;
+			atlOffset=3.4332275e-005;
+		};
+		class Item81
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12406.667,29.274504,15557.986};
+				angles[]={0,4.7497196,6.2811141};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=256;
+			type="Land_Workbench_01_F";
+			atlOffset=0.037836075;
+		};
+		class Item82
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12406.718,30.25528,15557.868};
+				angles[]={0,0,6.2811141};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=257;
+			type="Item_ToolKit";
+			atlOffset=0.85422897;
+		};
+		class Item83
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12417.04,29.145863,15554.104};
+				angles[]={0,0,6.2811141};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=258;
+			type="Land_CanisterPlastic_F";
+			atlOffset=0.079608917;
+		};
+		class Item84
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12417.118,29.06641,15559.888};
+				angles[]={0,3.8874531,6.2811141};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=259;
+			type="Land_CanisterPlastic_F";
+			atlOffset=0.00031471252;
+		};
+		class Item85
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12408.712,29.203413,15559.265};
+				angles[]={0,4.1927137,6.2811141};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=260;
+			type="Land_CanisterPlastic_F";
+			atlOffset=0.11990356;
+		};
+		class Item86
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12406.713,29.210066,15556.262};
+				angles[]={0,2.1970952,6.2811141};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=261;
+			type="Land_FireExtinguisher_F";
+			atlOffset=0.0850811;
+		};
+		class Item87
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12417.673,28.706205,15561.697};
+				angles[]={0,3.271996,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=262;
+			type="Land_FireExtinguisher_F";
+			atlOffset=3.4226456;
+		};
+		class Item88
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12410.501,28.992571,15559.953};
+				angles[]={0,1.0453109,6.2811141};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=263;
+			type="Land_FireExtinguisher_F";
+			atlOffset=3.3854485;
+		};
+		class Item89
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12417.059,29.681562,15555.381};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=265;
+			type="Land_Gloves_F";
+			atlOffset=0.96325111;
+		};
+		class Item90
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12416.753,29.684244,15555.303};
+				angles[]={0,4.7269602,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=266;
+			type="Land_Grinder_F";
+			atlOffset=0.88663673;
+		};
+		class Item91
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12417.097,29.114658,15555.404};
+				angles[]={0,1.5401043,6.2811141};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=267;
+			type="Land_ToolTrolley_02_F";
+			atlOffset=3.3368073;
+		};
+		class Item92
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12409.83,28.618662,15556.732};
+				angles[]={0,1.4167863,6.2811141};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=268;
+			type="B_Carryall_cbr";
+			atlOffset=3.3053112;
+		};
+		class Item93
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12409.702,28.652723,15555.754};
+				angles[]={0,4.0929565,6.2811141};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=269;
+			type="B_Carryall_khk";
+			atlOffset=3.3391075;
+		};
+		class Item94
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12406.609,29.596706,15557.157};
+				angles[]={0,3.2588329,6.2811141};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=270;
+			type="B_Kitbag_cbr";
+			atlOffset=0.0020084381;
+		};
+		class Item95
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12409.256,29.166965,15554.307};
+				angles[]={0,0,6.2811141};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=273;
+			type="Land_Sacks_heap_F";
+			atlOffset=0.041620255;
+		};
+		class Item96
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12310.575,24.624382,15591.074};
+				angles[]={6.2824135,4.8199706,6.2763495};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=282;
+			type="Land_Workbench_01_F";
+			atlOffset=0.39107704;
+		};
+		class Item97
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12310.538,25.603844,15591.116};
+				angles[]={6.2824135,0,6.2763495};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=283;
+			type="Item_ToolKit";
+			atlOffset=0.77157021;
+		};
+		class Item98
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12312.959,24.649921,15589.289};
+				angles[]={0.011262327,5.1153202,6.2783151};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=284;
+			type="Land_CanisterPlastic_F";
+			atlOffset=0.14764977;
+		};
+		class Item99
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12312.673,24.618172,15590.212};
+				angles[]={6.2824135,2.7195876,6.2763495};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=285;
+			type="Land_CanisterPlastic_F";
+			atlOffset=0.11457825;
+		};
+		class Item100
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12312.42,24.638554,15589.469};
+				angles[]={6.2824135,3.0248482,6.2763495};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=286;
+			type="Land_CanisterPlastic_F";
+			atlOffset=0.13379097;
+		};
+		class Item101
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12310.143,24.595762,15589.331};
+				angles[]={6.2824135,2.1970952,6.2763495};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=287;
+			type="Land_FireExtinguisher_F";
+			atlOffset=0.038198471;
+		};
+		class Item102
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12416.87,25.392298,15554.599};
+						angles[]={0,2.8793743,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						presence=0.52674955;
+						stance="Middle";
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=302;
+					type="I_G_Soldier_F";
+					atlOffset=0.092090607;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=301;
+			atlOffset=0.092090607;
+		};
+		class Item103
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12419.313,25.386721,15559.97};
+						angles[]={0,2.8793743,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						presence=0.52674955;
+						stance="Middle";
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=304;
+					type="I_G_Soldier_F";
+					atlOffset=0.091575623;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=303;
+			atlOffset=0.091575623;
+		};
+		class Item104
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12408.912,25.521969,15549.594};
+						angles[]={0,2.1553507,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						presence=0.52674955;
+						stance="Middle";
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=306;
+					type="I_G_Soldier_F";
+					atlOffset=0.091724396;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=305;
+			atlOffset=0.091724396;
+		};
+		class Item105
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12415.823,25.721169,15529.355};
+						angles[]={0,2.8793743,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						presence=0.52674955;
+						stance="Up";
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_akms";
+								class primaryMuzzleMag
+								{
+									name="rhs_30Rnd_762x39mm";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="U_IG_Guerilla1_1";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="MiniGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=1;
+										ammoLeft=30;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_Chestrig_oli";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="HandGrenade";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="SmokeShell";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="SmokeShellGreen";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="Chemlight_blue";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_30Rnd_762x39mm";
+										count=4;
+										ammoLeft=30;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="H_Shemag_olive";
+						};
+					};
+					id=308;
+					type="I_G_Soldier_F";
+					atlOffset=-5.1498413e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=307;
+			atlOffset=-5.1498413e-005;
+		};
+		class Item106
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12413.459,29.201763,15554.291};
+				angles[]={0,0,6.2811141};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=311;
+			type="Land_Sacks_heap_F";
+			atlOffset=0.085124969;
+		};
+		class Item107
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12411.465,29.173096,15556.688};
+				angles[]={0,2.4378889,6.2811141};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=312;
+			type="Land_Sacks_heap_F";
+			atlOffset=0.052326202;
+		};
+		class Item108
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12420.104,29.139,15552.151};
+				angles[]={0,0,6.2811141};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=313;
+			type="Land_CanisterPlastic_F";
+			atlOffset=0.079092026;
+		};
+		class Item109
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12419.589,29.12888,15552.42};
+				angles[]={0,0,6.2811141};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=314;
+			type="Land_CanisterPlastic_F";
+			atlOffset=0.067905426;
+		};
+		class Item110
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12420.152,29.14537,15552.94};
+				angles[]={0,1.8862746,6.2811141};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=315;
+			type="Land_CanisterPlastic_F";
+			atlOffset=0.08556366;
+		};
+		class Item111
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12419.516,29.140217,15553.361};
+				angles[]={0,6.0382071,6.2811141};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=316;
+			type="Land_CanisterPlastic_F";
+			atlOffset=0.079090118;
+		};
+	};
+	class Connections
+	{
+		class LinkIDProvider
+		{
+			nextID=2;
+		};
+		class Links
+		{
+			items=2;
+			class Item0
+			{
+				linkID=0;
+				item0=129;
+				item1=128;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item1
+			{
+				linkID=1;
+				item0=130;
+				item1=129;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+		};
+	};
+};

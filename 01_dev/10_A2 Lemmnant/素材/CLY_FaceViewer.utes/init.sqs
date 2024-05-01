@@ -1,0 +1,60 @@
+;Simple face cycle script by Celery
+
+titleText ["","BLACK FADED",1]
+@!isNil "faceno" and !isNil "camoreset"
+
+~0.1
+
+camos=["","_camo1","_camo2","_camo3","_camo4","_camo5","_camo6"]
+camo=""
+
+expansion=0
+expansionsuffix=""
+
+facestring=faceno
+?facestring<10:facestring=format ["0%1",faceno]
+faceid=format ["Face%1%2%3",facestring,camo,expansionsuffix]
+man setFace faceid
+
+findDisplay 46 displaySetEventHandler ["MouseButtonDown","if (_this select 1==0) then {mouse1=true};if (_this select 1==1) then {mouse2=true};if (_this select 1==2) then {wheelpress=true}"]
+findDisplay 46 displaySetEventHandler ["MouseZChanged","wheel=_this select 1"]
+hint format ["""%1""\n\nNext face: Wheel down\nPrevious face: Wheel up\nNext camo: Mouse primary\nPrevious camo: Mouse secondary\nExpansion toggle: Wheel press",faceid]
+
+titleText ["","BLACK IN",1]
+
+
+#start
+mouse1=false
+mouse2=false
+wheel=0
+wheelpress=false
+
+@mouse1 or mouse2 or wheel!=0 or wheelpress
+
+?wheel<0:faceno=faceno+1
+?wheel>0:faceno=faceno-1
+
+?camoreset and wheel==0:camo=""
+?mouse1 and camo!=camos select (count camos)-1:camo=camos select (camos find camo)+1
+?mouse2 and camo!=camos select 0:camo=camos select (camos find camo)-1
+
+?wheelpress and expansion<2:expansion=expansion+1;wheelpress=false
+?wheelpress and expansion==2:expansion=0
+expansionsuffix=""
+?expansion==1:expansionsuffix="_EP1"
+?expansion==2:expansionsuffix="_baf";camo=""
+
+?faceno<1:faceno=1
+?faceno>21 and expansion==1:faceno=21
+?faceno>10 and expansion==2:faceno=10
+?faceno>107:faceno=107
+
+facestring=faceno
+?facestring<10:facestring=format ["0%1",faceno]
+faceid=format ["Face%1%2%3",facestring,camo,expansionsuffix]
+?faceno==21 and expansion==1:faceid="Facegrover_EP1"
+?faceno==10 and expansion==2:faceid="FrostFace"
+man setFace faceid
+
+hintSilent format ["""%1""",faceid]
+goto "start"

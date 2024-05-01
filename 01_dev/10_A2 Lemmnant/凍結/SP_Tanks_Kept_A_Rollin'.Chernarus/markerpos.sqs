@@ -1,0 +1,13 @@
+"Bmor1" setmarkerpos (getpos mor1);
+
+"plat4" setmarkerpos (getpos mor1);
+
+
+#loop1
+
+"Barm1" setmarkerpos (getpos tk1);
+
+"plat5" setmarkerpos (getpos tk1);
+
+
+goto "loop1"

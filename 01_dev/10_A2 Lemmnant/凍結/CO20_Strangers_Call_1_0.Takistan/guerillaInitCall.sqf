@@ -1,0 +1,33 @@
+if (isServer) then 
+				{
+					nul = [guerilla1]	execVM "guerillaInit.sqf";
+					nul = [guerilla2]	execVM "guerillaInit.sqf";
+					nul = [guerilla3]	execVM "guerillaInit.sqf";
+					nul = [guerilla4]	execVM "guerillaInit.sqf";
+					nul = [guerilla5]	execVM "guerillaInit.sqf";
+					nul = [guerilla6]	execVM "guerillaInit.sqf";
+					nul = [guerilla7]	execVM "guerillaInit.sqf";
+					nul = [guerilla8]	execVM "guerillaInit.sqf";
+					nul = [guerilla9]	execVM "guerillaInit.sqf";
+					nul = [guerilla10]	execVM "guerillaInit.sqf";
+					if ((date select 3) > 20) then {nul = [guerilla11] execVM "guerillaInit.sqf"};
+					if ((date select 3) > 20) then {nul = [guerilla12] execVM "guerillaInit.sqf"};
+					if ((date select 3) > 20) then {nul = [guerilla13] execVM "guerillaInit.sqf"};
+					if ((date select 3) > 20) then {nul = [guerilla14] execVM "guerillaInit.sqf"};
+					if ((date select 3) > 20) then {nul = [guerilla15] execVM "guerillaInit.sqf"};
+					if ((date select 3) > 20) then {nul = [guerilla16] execVM "guerillaInit.sqf"};
+					if ((date select 3) > 20) then {nul = [guerilla17] execVM "guerillaInit.sqf"};
+					if ((date select 3) > 20) then {nul = [guerilla18] execVM "guerillaInit.sqf"};
+					if ((date select 3) > 20) then {nul = [guerilla19] execVM "guerillaInit.sqf"};
+					if ((date select 3) > 20) then {nul = [guerilla20] execVM "guerillaInit.sqf"};
+					if ((date select 3) > 20) then {nul = [guerilla21] execVM "guerillaInit.sqf"};
+					if ((date select 3) > 20) then {nul = [guerilla22] execVM "guerillaInit.sqf"};
+					if ((date select 3) > 20) then {nul = [guerilla23] execVM "guerillaInit.sqf"};
+					if ((date select 3) > 20) then {nul = [guerilla24] execVM "guerillaInit.sqf"};
+					if ((date select 3) > 20) then {nul = [guerilla25] execVM "guerillaInit.sqf"};
+					if ((date select 3) > 20) then {nul = [guerilla26] execVM "guerillaInit.sqf"};
+					if ((date select 3) > 20) then {nul = [guerilla27] execVM "guerillaInit.sqf"};
+					if ((date select 3) > 20) then {nul = [guerilla28] execVM "guerillaInit.sqf"};
+					if ((date select 3) > 20) then {nul = [guerilla29] execVM "guerillaInit.sqf"};
+					if ((date select 3) > 20) then {nul = [guerilla30] execVM "guerillaInit.sqf"};
+				};

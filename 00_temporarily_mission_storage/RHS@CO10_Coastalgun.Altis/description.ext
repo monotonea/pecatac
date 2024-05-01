@@ -1,0 +1,17 @@
+﻿//ACEスペクテーター　descriptionに書く
+// respawn = "bird"; respawnTemplates[] = {"ace_spectator"};
+
+author="PeCa Tactical Lowbrow";
+OnLoadName = "RHS CoastalGun";
+
+overviewText="前哨と沿岸砲を破壊せよ";
+
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "You successfully completed all mission objectives.";
+	};
+};

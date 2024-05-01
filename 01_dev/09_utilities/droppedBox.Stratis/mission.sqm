@@ -1,0 +1,194 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"a3_map_stratis",
+		"A3_Structures_F_Ind_Cargo",
+		"A3_Structures_F_Training",
+		"A3_Soft_F_Offroad"
+	};
+	addOnsAuto[]=
+	{
+		"A3_Soft_F_Offroad",
+		"A3_Structures_F_Ind_Cargo",
+		"A3_Structures_F_Training",
+		"a3_map_stratis"
+	};
+	randomSeed=15181742;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1722.3433,5.5,5685.8833};
+					id=0;
+					side="CIV";
+					vehicle="c_offroad";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					text="car";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=2;
+		class Item0
+		{
+			position[]={1707.8527,5.5,5692.667};
+			special="NONE";
+			id=1;
+			side="EMPTY";
+			vehicle="Land_CargoBox_V1_F";
+			skill=0.60000002;
+			text="box";
+		};
+		class Item1
+		{
+			position[]={1708.1617,5.5,5685.7007};
+			id=2;
+			side="EMPTY";
+			vehicle="ShootingPos_F";
+			skill=0.60000002;
+			text="obj";
+			init="nul=[]spawn{while{true}do{obj setpos [position car select 0,position car select 1,5]}};";
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={1715.639,5.5,5690.1133};
+			a=0;
+			b=0;
+			activationBy="ALPHA";
+			activationType="NOT PRESENT";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			text="drop a box";
+			expActiv="box setpos [position vehicle player select 0,(position vehicle player select 1),5];";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"a3_map_stratis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_stratis"
+	};
+	randomSeed=15238449;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"a3_map_stratis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_stratis"
+	};
+	randomSeed=14793912;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"a3_map_stratis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_stratis"
+	};
+	randomSeed=14064622;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};

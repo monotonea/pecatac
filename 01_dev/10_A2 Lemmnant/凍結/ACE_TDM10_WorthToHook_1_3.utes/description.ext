@@ -1,0 +1,10 @@
+class Params
+{
+        class DayTime
+        {
+                title = "Time Of Day";
+                values[] = {5,12,18,20};
+                texts[] = {"Dawn","Mid day","Dawn","Night Time"};
+                default = 8;
+        };
+};

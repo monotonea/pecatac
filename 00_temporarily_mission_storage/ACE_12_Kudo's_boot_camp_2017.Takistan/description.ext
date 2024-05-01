@@ -1,0 +1,38 @@
+﻿class CfgNotifications
+{
+	class Task1Accomplished
+	{
+		title = "TASK ACCOMPLISHED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "目標地域無力化";
+		color[] = {0.6,0.8,0.4,1};
+	};
+	class Task2Accomplished
+	{
+		title = "TASK ACCOMPLISHED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "基地へ帰還せよ";
+		color[] = {0.6,0.8,0.4,1};
+	};
+	class extractionAccomplished
+	{
+		title = "TASK ACCOMPLISHED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "我々の勝利だ！！";
+		color[] = {0.6,0.8,0.4,1};
+	};
+	class Caution1Failed
+	{
+		title = "TASK FAILED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIconfailed_ca.paa";
+		description = "証拠品が破壊された";
+		color[] = {0.9,0.1,0.1,1};
+	};
+	class Caution2Failed
+	{
+		title = "TASK FAILED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIconfailed_ca.paa";
+		description = "民間人を殺害";
+		color[] = {0.9,0.1,0.1,1};
+	};
+};

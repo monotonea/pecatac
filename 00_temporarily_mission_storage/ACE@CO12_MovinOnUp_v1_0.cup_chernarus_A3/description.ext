@@ -1,0 +1,15 @@
+class CfgDebriefing
+{ 
+    class End1
+    {
+        title = "Mission Completed";
+        subtitle = "";
+        description = "ìí‚Í¬Œ÷‚µ‚½";
+    };
+    class End2
+    {
+        title = "Mission Failed";
+        subtitle = "";
+        description = "ìí‚Í¸”s‚µ‚½";
+    };
+};

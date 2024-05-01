@@ -1,0 +1,20 @@
+#include "f\common\f_spect\spectating.hpp"
+
+class Params
+{
+        class DayTime
+        {
+                title = "Time Of Operation";
+                values[] = {0,6,10};
+                texts[] = {"Midday","Dusk","Night time(Fanatics grin in the dark)"};
+                default = 0;
+        };
+};
+
+
+class Header
+{
+gameType = COOP;
+minPlayers = 1;
+maxPlayers = 20;
+};

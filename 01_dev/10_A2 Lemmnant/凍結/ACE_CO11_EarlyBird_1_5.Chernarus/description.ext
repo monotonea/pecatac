@@ -1,0 +1,7 @@
+class Header
+{
+  gameType = Coop;
+  minPlayers = 1;
+  maxPlayers = 11;
+};
+OnLoadMissionTime = True;

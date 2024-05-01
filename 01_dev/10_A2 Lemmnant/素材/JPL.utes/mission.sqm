@@ -1,0 +1,302 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"cacharacters2",
+		"utes",
+		"CATracked"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters2",
+		"CATracked",
+		"utes"
+	};
+	randomSeed=11881103;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+	class Groups
+	{
+		items=4;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={3518.0444,19,3611.9348};
+					azimut=95;
+					special="NONE";
+					id=0;
+					side="WEST";
+					vehicle="USMC_Soldier_HAT";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={3497.7051,18.957472,3575.7476};
+					special="NONE";
+					id=2;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3985.6797,19,3607.7505};
+					azimut=270;
+					special="NONE";
+					id=3;
+					side="EAST";
+					vehicle="T72_RU";
+					leader=1;
+					skill=0.60000002;
+					ammo=0;
+					text="tk";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3146.6179,27.443665,4370.3687};
+					special="NONE";
+					id=1;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={3157.3462,25.017117,4376.1904};
+					id=4;
+					side="WEST";
+					vehicle="USMC_Soldier_TL";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46666664;
+				};
+				class Item1
+				{
+					position[]={3160.3462,25.124018,4371.1904};
+					id=5;
+					side="WEST";
+					vehicle="USMC_Soldier_AR";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item2
+				{
+					position[]={3162.3462,24.86404,4371.1904};
+					id=6;
+					side="WEST";
+					vehicle="USMC_Soldier_LAT";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item3
+				{
+					position[]={3164.3462,24.604025,4371.1904};
+					id=7;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					skill=0.2;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3506.8042,18.191555,4401.7593};
+					formation="FILE";
+					speed="LIMITED";
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=1;
+		class Item0
+		{
+			position[]={4039.0601,19,3614.2605};
+			name="icon1";
+			text="こいつ、敵です";
+			type="mil_destroy";
+			angle=45;
+		};
+	};
+	class Sensors
+	{
+		items=4;
+		class Item0
+		{
+			position[]={3473.5271,19,3636.072};
+			a=0;
+			b=0;
+			activationBy="ALPHA";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			text="Sidechat 1";
+			expActiv="player sideChat localize ""c01""";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={3502.0708,19,3636.7087};
+			a=0;
+			b=0;
+			activationBy="CHARLIE";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			text="titletext";
+			class Effects
+			{
+				titleType="TEXT";
+				titleEffect="PLAIN DOWN";
+				title="たいちょー、敵が来ました";
+			};
+		};
+		class Item2
+		{
+			position[]={3472.843,19,3620.3994};
+			a=0;
+			b=0;
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="! alive tk";
+			expActiv="hint ""神戦車が紙みたいに燃えとる！""";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={3488.1946,19,3636.2283};
+			a=0;
+			b=0;
+			activationBy="BRAVO";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			text="Sidechat 2";
+			expActiv="player sideChat localize ""c02""";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=97274;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=15811712;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=6712081;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};

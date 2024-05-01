@@ -1,0 +1,20 @@
+﻿//ACEスペクテーター　descriptionに書く
+// respawn = "bird"; respawnTemplates[] = {"ace_spectator"};
+
+author="PeCa Tactical Lowbrow";
+OnLoadName = "CO08 Amphibian";
+loadScreen = "loadscreen.jpg";
+
+overviewText="海上よりStratis飛行場へ潜入し、機密書類を奪取せよ。";
+overviewPicture="loadscreen.jpg";
+
+
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "You successfully completed all mission objectives.";
+	};
+};

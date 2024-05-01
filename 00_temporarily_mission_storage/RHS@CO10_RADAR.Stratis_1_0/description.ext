@@ -1,0 +1,37 @@
+﻿class Header
+{
+	gameType = COOP; 
+	minPlayers = 1; 
+	maxPlayers = 10; 
+};
+
+author="PeCa Tactical Lowbrow";
+OnLoadName = "RADAR";
+loadScreen = "loadScreen.jpg";
+
+overviewText="ＭＩＫＥ－２６のレーダー建屋を破壊せよ";
+overviewPicture="loadScreen.jpg";
+
+class CfgNotifications
+{
+	class TaskAccomplished
+	{
+	title = "TASK ACCOMPLISHED";
+	iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+	color[] = {0.6,0.8,0.4,1};
+	description = "%1";
+	};
+};
+
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "You successfully completed all mission objectives.";
+//		backgroundPicture = "";
+//		picture = "";
+//		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+};

@@ -1,0 +1,102 @@
+
+commandstop (driver tk1)
+tk1 setpos (getpos logic)
+[] exec "donotmove.sqs"
+~1
+_camera1 = "camera" CamCreate [0,0,0]
+
+
+
+_camera1 camSetFov 0.7
+_camera1 CameraEffect ["Internal","BACK"]
+_camera1 CamSetTarget tk1
+_camera1 CamSetRelPos [15,10,5]
+_camera1 CamCommit 0
+
+{ dostop _x} forEach units group player
+
+
+_camera1 CamSetRelPos [-5,10,3]
+_camera1 CamCommit 8
+@(CamCommitted _camera1)
+_camera1 CameraEffect ["TERMINATE","BACK"]
+
+
+_camera1 camSetFov 0.7
+_camera1 CameraEffect ["Internal","BACK"]
+_camera1 CamSetTarget t72a
+_camera1 CamSetPos [(getpos player select 0 )-5,(getpos player select 1 )+10,3.01]
+_camera1 CamCommit 5
+_camera1 CamSetPos [(getpos player select 0 )-5,(getpos player select 1 )+10,3]
+_camera1 CamCommit 8
+@(CamCommitted _camera1)
+~3
+_camera1 CameraEffect ["TERMINATE","BACK"]
+
+showCinemaBorder false
+cutRsc ["binocular","PLAIN"]
+_camera1 camSetFov 0.05
+_camera1 CameraEffect ["Internal","BACK"]
+_camera1 CamSetTarget t72a
+_camera1 CamSetPos [(getpos logic select 0),(getpos logic select 1)-10,+15]
+_camera1 CamCommit 0
+_camera1 CamSetPos [(getpos logic select 0),(getpos logic select 1)-10,+15.001]
+_camera1 CamCommit 8
+@(CamCommitted _camera1)
+_camera1 CameraEffect ["TERMINATE","BACK"]
+
+
+_camera1 CameraEffect ["Internal","BACK"]
+_camera1 CamSetTarget t72c
+_camera1 CamSetPos [(getpos logic select 0),(getpos logic select 1)-10,+15]
+_camera1 CamCommit 5
+_camera1 CamSetPos [(getpos logic select 0),(getpos logic select 1)-10,+15.001]
+_camera1 CamCommit 10
+@(CamCommitted _camera1)
+_camera1 CameraEffect ["TERMINATE","BACK"]
+
+
+_camera1 CameraEffect ["Internal","BACK"]
+_camera1 CamSetTarget zsu23a
+_camera1 CamSetPos [(getpos logic select 0),(getpos logic select 1)-10,+15]
+_camera1 CamCommit 5
+_camera1 CamSetPos [(getpos logic select 0),(getpos logic select 1)-10,+15.001]
+_camera1 CamCommit 10
+@(CamCommitted _camera1)
+_camera1 CameraEffect ["TERMINATE","BACK"]
+
+
+_camera1 CameraEffect ["Internal","BACK"]
+_camera1 CamSetTarget bmp2a
+_camera1 CamSetPos [(getpos logic select 0),(getpos logic select 1)-10,+15]
+_camera1 CamCommit 5
+_camera1 CamSetPos [(getpos logic select 0),(getpos logic select 1)-10,+15.001]
+_camera1 CamCommit 10
+@(CamCommitted _camera1)
+_camera1 CameraEffect ["TERMINATE","BACK"]
+
+
+
+
+_camera1 CameraEffect ["Internal","BACK"]
+_camera1 CamSetTarget madam
+_camera1 CamSetPos [(getpos logic select 0),(getpos logic select 1)-10,+15]
+_camera1 CamCommit 8
+
+_camera1 camSetFov 0.03
+_camera1 CamSetPos [(getpos logic select 0),(getpos logic select 1)-10,+15.001]
+_camera1 CamCommit 15
+
+@(CamCommitted _camera1)
+~10
+_camera1 CameraEffect ["TERMINATE","BACK"]
+
+
+CamDestroy _camera1
+cutRsc ["default","PLAIN"]
+
+disableUserInput false
+calling = true
+savegame
+
+exit

@@ -1,0 +1,14 @@
+class CfgIdentities
+{
+
+ class PlayerUnit
+ {
+  name="Namae kanngae chu";
+  face="Face01_Camo3";
+  glasses="None";
+  speaker="Male01";
+  pitch=1;
+ };
+
+
+};

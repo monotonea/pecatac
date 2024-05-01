@@ -1,0 +1,228 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"cacharacters",
+		"utes",
+		"CAA10",
+		"CAWheeled",
+		"cacharacters2",
+		"caweapons_e_ammoboxes"
+	};
+	addOnsAuto[]=
+	{
+		"CAWheeled",
+		"cacharacters2",
+		"caweapons_e_ammoboxes",
+		"utes"
+	};
+	randomSeed=812547;
+	class Intel
+	{
+		startWeather=0;
+		forecastWeather=0;
+		year=2008;
+		month=6;
+		day=24;
+		hour=15;
+	};
+	class Groups
+	{
+		items=3;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3736.0061,19,3606.3457};
+					special="NONE";
+					id=0;
+					side="WEST";
+					vehicle="HMMWV_M2";
+					player="PLAYER GUNNER";
+					leader=1;
+					skill=0.60000002;
+					init="this setcaptive true; player setcaptive true";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={3779.2373,19,3638.7783};
+					azimut=358.12393;
+					id=1;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.466667;
+				};
+				class Item1
+				{
+					position[]={3782.3972,19,3633.876};
+					azimut=358.12393;
+					id=2;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					rank="CORPORAL";
+					skill=0.33333299;
+				};
+				class Item2
+				{
+					position[]={3784.3984,19,3633.9414};
+					azimut=358.12393;
+					id=3;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					skill=0.2;
+				};
+				class Item3
+				{
+					position[]={3786.396,19,3634.0071};
+					azimut=358.12393;
+					id=4;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					skill=0.2;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3668.8647,19,3638.2874};
+					formation="COLUMN";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3736.1929,18.98554,3652.8516};
+					azimut=180;
+					special="NONE";
+					id=5;
+					side="WEST";
+					vehicle="HMMWV_M2";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=1;
+		class Item0
+		{
+			position[]={3725.9785,19,3613.0654};
+			special="NONE";
+			id=6;
+			side="EMPTY";
+			vehicle="USLaunchers_EP1";
+			leader=1;
+			skill=0.60000002;
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={3726.3127,19,3626.4512};
+			a=0;
+			b=0;
+			activationBy="ALPHA";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="duration = 2; sqf = [] spawn {setacctime -100; tt = time; waituntil {abs(tt -time) > -(duration*(acctime))};setacctime 1; player setpos [position player select 0,position player select 1,0]};";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=3951107;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.1;
+		year=2008;
+		month=6;
+		day=24;
+		hour=15;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=8505859;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.1;
+		year=2008;
+		month=6;
+		day=24;
+		hour=15;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=594947;
+	class Intel
+	{
+		startWeather=0.1;
+		forecastWeather=0.1;
+		year=2008;
+		month=6;
+		day=24;
+		hour=15;
+	};
+};

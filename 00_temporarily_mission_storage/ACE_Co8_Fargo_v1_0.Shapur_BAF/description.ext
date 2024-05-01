@@ -1,0 +1,11 @@
+
+class CfgMusic
+{
+  tracks[]={};
+
+  class victory
+  {
+    name = "victory";
+    sound[] = {"victory.ogg", db+0, 1};
+  };
+};

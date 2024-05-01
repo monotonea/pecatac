@@ -1,0 +1,43 @@
+
+cap say["cap1v",10];
+cap sideradio "cap1";
+~8
+cap say ["cap2v",10];
+cap sideradio "cap2";
+~8
+cap say ["cap3v",10];
+cap sideradio "cap3";
+~10
+cap say ["cap4v",10];
+cap sideradio "cap4";
+~7
+cap say ["cap5v",10];
+cap sideradio "cap5";
+~10
+cap say ["cap6v",10];
+cap sideradio "cap6";
+~8
+cap say ["cap7v",10];
+cap sideradio "cap7";
+~8
+SALEM1 say ["pl1v",10];
+SALEM1 sideradio "pl1";
+~6
+cap say ["cap8v",10];
+cap sideradio "cap8";
+~11
+cap say ["cap9v",10];
+cap sideradio "cap9";
+~9
+cap say ["cap10v",10];
+cap sideradio "cap10";
+~5
+SALEM1 say ["pl2v",10];
+SALEM1 sideradio "pl2";
+~5
+cap say ["cap11v",10];
+cap sideradio "cap11";
+~5
+briefend = true;
+player setcurrenttask tskObj0;
+exit

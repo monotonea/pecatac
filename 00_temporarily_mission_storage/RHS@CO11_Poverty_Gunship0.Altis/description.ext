@@ -1,0 +1,24 @@
+﻿//ACEスペクテーター　descriptionに書く
+// respawn = "bird"; respawnTemplates[] = {"ace_spectator"};
+
+class CfgDebriefing
+{ 
+    class End1
+    {
+        title = "Victory!";
+        subtitle = "";
+        description = "敵の戦車を破壊し陣地の防衛に成功した。我軍の大勝利である！";
+    };
+    class End2
+    {
+        title = "Mission failed";
+        subtitle = "";
+        description = "作戦は失敗した";
+    };
+    class End3
+    {
+        title = "Partial success";
+        subtitle = "";
+        description = "戦車の破壊には失敗したが、陣地の防衛に成功し敵は退却した。";
+    };
+};

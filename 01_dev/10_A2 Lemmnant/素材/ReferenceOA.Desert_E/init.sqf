@@ -1,0 +1,1 @@
+nul = [this] execVM "cashInit.sqf";

@@ -1,0 +1,3 @@
+OnLoadMission = "You can't stop yourselves until you die commies!";
+OnLoadMissionTime = False;
+disabledAI = false;

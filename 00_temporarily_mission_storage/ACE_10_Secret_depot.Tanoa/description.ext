@@ -1,0 +1,26 @@
+﻿class Header
+{
+    gameType = COOP; 
+    minPlayers = 2; 
+    maxPlayers = 10; 
+};
+
+respawn = "bird"; respawnTemplates[] = {"ace_spectator"};
+
+class CfgNotifications
+{
+	class Task1Accomplished
+	{
+		title = "TASK ACCOMPLISHED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "目標を破壊した。";
+		color[] = {0.6,0.8,0.4,1};
+	};
+	class Task2Accomplished
+	{
+		title = "TASK ACCOMPLISHED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "脱出";
+		color[] = {0.6,0.8,0.4,1};
+	};
+};

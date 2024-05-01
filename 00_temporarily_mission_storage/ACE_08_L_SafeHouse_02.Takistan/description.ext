@@ -1,0 +1,74 @@
+﻿class Header
+{
+	gameType = COOP; 
+	minPlayers = 2; 
+	maxPlayers = 8; 
+};
+
+respawn = "bird"; respawnTemplates[] = {"ace_spectator"};
+
+
+
+class CfgNotifications
+{
+
+	class Task1Accomplished
+	{
+		title = "TASK ACCOMPLISHED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "目標地域無力化";
+		color[] = {0.6,0.8,0.4,1};
+	};
+	class Task2Accomplished
+	{
+		title = "TASK ACCOMPLISHED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "証拠物品収集";
+		color[] = {0.6,0.8,0.4,1};
+	};
+	class extractionAccomplished
+	{
+		title = "TASK ACCOMPLISHED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "脱出地点に到着";
+		color[] = {0.6,0.8,0.4,1};
+	};
+	class CautionFailed
+	{
+		title = "TASK FAILED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIconfailed_ca.paa";
+		description = "民間人を殺害";
+		color[] = {0.9,0.1,0.1,1};
+	};
+	class OperatorDead
+	{
+		title = "TASK FAILED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIconfailed_ca.paa";
+		description = "隊員が戦死";
+		color[] = {0.9,0.1,0.1,1};
+	};
+	class HelicopterDown
+	{
+		title = "TASK FAILED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIconfailed_ca.paa";
+		description = "ヘリコプターが墜落";
+		color[] = {0.9,0.1,0.1,1};
+	};
+};
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "Mission completed.";
+	};
+
+	class Lose1
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "Defeat.";
+	};
+	
+};

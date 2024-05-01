@@ -1,0 +1,10 @@
+class CfgSounds
+{
+ sounds[] = {};
+  class neveno
+  {
+  	name = "neveno";
+  	sound[] = {"neveno.ogg",db+10,1};
+   	titles[] = {};
+  };
+};

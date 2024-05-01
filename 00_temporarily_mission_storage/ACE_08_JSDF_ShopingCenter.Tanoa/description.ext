@@ -1,0 +1,34 @@
+﻿#include "arty_gui\defines.hpp"
+#include "arty_gui\dialogs.hpp"
+
+class CfgNotifications
+{
+	class Task1Accomplished
+	{
+		title = "TASK ACCOMPLISHED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "ショッピングセンターを制圧。";
+		color[] = {0.6,0.8,0.4,1};
+	};
+	class Task2Accomplished
+	{
+		title = "TASK ACCOMPLISHED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "該当戦域から敵を駆逐した。";
+		color[] = {0.6,0.8,0.4,1};
+	};
+	class CautionFailed
+	{
+		title = "TASK FAILED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIconfailed_ca.paa";
+		description = "衛生隊員が戦死";
+		color[] = {0.9,0.1,0.1,1};
+	};
+	class Caution2Failed
+	{
+		title = "TASK FAILED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIconfailed_ca.paa";
+		description = "作戦失敗";
+		color[] = {0.9,0.1,0.1,1};
+	};
+};

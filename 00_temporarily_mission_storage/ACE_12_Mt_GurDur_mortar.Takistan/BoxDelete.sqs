@@ -1,0 +1,15 @@
+if (!isserver) exitWith {};
+
+Hint "Choose your weapons! Ammo boxes will disappear at 5 minutes.";
+
+~240
+Hint "Last 1 minutes.";
+~30
+Hint "Last 30 sec.";
+~30
+Hint "Ammo boxes are deleted.";
+DeleteVehicle Box1;
+DeleteVehicle Box2;
+DeleteVehicle Box3;
+Caution setTaskState "Succeeded";
+exit;

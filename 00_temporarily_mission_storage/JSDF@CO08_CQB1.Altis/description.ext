@@ -1,0 +1,2 @@
+//ACEスペクテーター　descriptionに書く
+respawn = "bird"; respawnTemplates[] = {"ace_spectator"};

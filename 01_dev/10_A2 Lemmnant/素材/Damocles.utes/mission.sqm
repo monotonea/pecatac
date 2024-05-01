@@ -1,0 +1,334 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"cacharacters2",
+		"utes",
+		"CAWheeled",
+		"ca_modules_marta",
+		"ca_highcommand"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters2",
+		"ca_modules_marta",
+		"ca_highcommand",
+		"CAWheeled",
+		"utes"
+	};
+	randomSeed=9801589;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+	class Groups
+	{
+		items=7;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={3439.8794,19,3598.0752};
+					special="NONE";
+					id=0;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					init="ft0 = group this;";
+				};
+				class Item1
+				{
+					position[]={3447.8965,19,3586.3054};
+					special="NONE";
+					id=1;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={3456.741,19,3586.677};
+					special="NONE";
+					id=2;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3485.0146,19,3626.1538};
+					id=3;
+					side="LOGIC";
+					vehicle="MartaManager";
+					leader=1;
+					skill=0.60000002;
+					init="setGroupIconsVisible [false,false];";
+					description="edit this as you like.";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={3438.3728,19,3580.3198};
+					special="NONE";
+					id=4;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					init="ft1 = group this;";
+				};
+				class Item1
+				{
+					position[]={3443.4158,18.90987,3569.012};
+					special="NONE";
+					id=5;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={3453.5015,18.912191,3568.7798};
+					special="NONE";
+					id=6;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item3
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3517.875,19,3598.9871};
+					id=8;
+					side="LOGIC";
+					vehicle="HighCommandSubordinate";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					synchronizations[]={7,9,10};
+				};
+			};
+		};
+		class Item4
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3499.3582,19,3606.7842};
+					id=7;
+					side="LOGIC";
+					vehicle="HighCommand";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					description="Modules are essential !";
+					synchronizations[]={8};
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3508.3113,18.938654,3573.866};
+					special="NONE";
+					id=9;
+					side="WEST";
+					vehicle="HMMWV";
+					leader=1;
+					skill=0.60000002;
+					init="sub1 = group this;";
+					synchronizations[]={8};
+				};
+			};
+		};
+		class Item6
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3517.8018,18.934961,3573.4966};
+					special="NONE";
+					id=10;
+					side="WEST";
+					vehicle="HMMWV";
+					leader=1;
+					skill=0.60000002;
+					init="sub2 = group this;";
+					synchronizations[]={8};
+				};
+			};
+		};
+	};
+	class Sensors
+	{
+		items=3;
+		class Item0
+		{
+			position[]={3512.5156,18.953773,3644.6221};
+			a=0;
+			b=0;
+			activationBy="ALPHA";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			text="KILL COMMANDER";
+			expActiv="cmdr setDamage 1;";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={3519.7207,18.956005,3644.3989};
+			a=0;
+			b=0;
+			activationBy="BRAVO";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			text="STATUS";
+			expActiv="hint format [""InitTList = %1,%2,%3,%4,%5,%6\n-----\nLiveList = %7,%8\n-----\ncmdr=%9"",initlist select 0,initlist select 1,initlist select 2,initlist select 3,initlist select 4,initlist select 5,livelist select 0,livelist select 1,cmdr];";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={3494.3755,19,3626.3474};
+			a=0;
+			b=0;
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="hcShownBar";
+			expActiv="setGroupIconsVisible [true,false];";
+			expDesactiv="setGroupIconsVisible [false,false];";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=13110686;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=4652644;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=14100830;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};

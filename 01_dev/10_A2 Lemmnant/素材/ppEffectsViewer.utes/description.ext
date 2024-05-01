@@ -1,0 +1,89 @@
+
+#define KNDR_CT_STATIC 				0 
+#define KNDR_CT_BUTTON 				1
+#define KNDR_SLIDER 				3
+
+#define KNDR_ST_CENTER 				0x02
+#define KNDR_ST_LEFT 				0x00
+#define KNDR_FontZ 					"Zeppelin32"
+#define KNDR_HORZ 					0x400
+#define KNDR_VERT 					0
+
+#define KNDR_PPE_DLG				8105
+#define KNDR_SLIDER0_ID				8106
+#define KNDR_RADIAL_DLG				8107
+#define KNDR_DYNAMIC_DLG			8108
+#define KNDR_FILM_DLG				8109
+#define KNDR_CHROM_DLG				8110
+#define KNDR_WET_DLG				8111
+
+#define KNDR_DEBUG_INPUT_SIZE_EX	0.03
+#define KNDR_DEBUG_WINDOW_X			0.40
+#define KNDR_DEBUG_WINDOW_Y			0.02
+#define KNDR_DEBUG_WINDOW_W			1.00 - 0.05 - KNDR_DEBUG_WINDOW_X
+#define KNDR_DEBUG_WINDOW_H			1.00 - 0.15 - KNDR_DEBUG_WINDOW_Y
+#define KNDR_DEBUG_INPUT_W			KNDR_DEBUG_WINDOW_W
+#define KNDR_DEBUG_INPUT_H			0.05
+#define KNDR_DEBUG_INPUT_X			KNDR_DEBUG_WINDOW_X
+#define KNDR_DEBUG_INPUT_Y			KNDR_DEBUG_WINDOW_Y + KNDR_DEBUG_WINDOW_H - KNDR_DEBUG_INPUT_H
+#define KNDR_DEBUG_BUTTON_W			0.20
+#define KNDR_DEBUG_BUTTON_H			KNDR_DEBUG_INPUT_H
+#define KNDR_DEBUG_BUTTON_EXIT_X	1.0 - 0.05 - KNDR_DEBUG_BUTTON_W
+#define KNDR_DEBUG_BUTTON_CLEAR_X	KNDR_DEBUG_BUTTON_EXIT_X - KNDR_DEBUG_BUTTON_W
+#define KNDR_DEBUG_BUTTON_EXEC_X	KNDR_DEBUG_BUTTON_CLEAR_X - KNDR_DEBUG_BUTTON_W
+#define KNDR_DEBUG_BUTTON_Y			KNDR_DEBUG_INPUT_Y + KNDR_DEBUG_BUTTON_H
+
+#define KNDR_WHITE_COLOR			{1.0, 1.0, 1.0, 1.0}
+#define KNDR_BLACK_COLOR			{0.0, 0.0, 0.0, 1.0}
+#define KNDR_RED_COLOR				{1.0, 0.0, 0.0, 1.0}
+#define KNDR_GREEN_COLOR			{0.0, 1.0, 0.0, 1.0}
+#define KNDR_ORANGE_COLOR			{1.0, 1.0, 0.0, 1.0}
+#define KNDR_BROWN_COLOR			{0.4, 0.2, 0.2, 1.0}
+#define KNDR_PURPLE_COLOR			{0.6, 0.2, 0.2, 1.0}
+#define KNDR_INVISIBLE_COLOR		{0.0, 0.0, 0.0, 0.0}
+#define KNDR_TRANSP_GRAY_COLOR		{0.5, 0.5, 0.5, 0.5}
+#define KNDR_TRANSP_BLACK_COLOR		{0.0, 0.0, 0.0, 0.5}
+
+#define KNDR_OFFSET					((1.0 - 0.2) / 15)
+
+class RscText
+{
+	type = KNDR_CT_STATIC;
+	IDC = -1;
+	style = KNDR_ST_LEFT;
+	lineSpacing = 1.00;
+	h = 0.04;
+	x = 0.1;
+	y = 0.65;
+	w = KNDR_DEBUG_BUTTON_W;
+	colorBackground[] = KNDR_TRANSP_BLACK_COLOR;
+	colorText[] = KNDR_WHITE_COLOR;
+	font = KNDR_FontZ;
+	SizeEx = KNDR_DEBUG_INPUT_SIZE_EX;
+	text = "";
+};
+
+class kndrSlider
+{
+	idc = -1;
+	type = KNDR_SLIDER;
+	style = KNDR_VERT;
+	y = 0.70;
+	w = 0.02;
+	h = 0.20;
+	color[] = KNDR_WHITE_COLOR;
+	coloractive[] = KNDR_ORANGE_COLOR;
+	onSliderPosChanged = "hint format[""(%1)"", _this select 1];"; 
+};
+
+#include "button.hpp"
+
+#include "radialBlur.hpp"
+#include "dynamicBlur.hpp"
+#include "colorCorrection.hpp"
+#include "filmgrain.hpp"
+#include "colorinversion.hpp"
+#include "chromatic.hpp"
+#include "wetdistortion.hpp"
+
+	

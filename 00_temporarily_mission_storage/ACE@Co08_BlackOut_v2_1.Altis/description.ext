@@ -1,0 +1,55 @@
+﻿respawn = "bird";
+respawnTemplates[] = {"ace_spectator"};
+
+class Header
+{
+	gameType = COOP; //game type
+	minPlayers = 1; //min # of players the mission supports
+	maxPlayers = 8; //max # of players the mission supports
+};
+
+author="JagaHunter";
+OnLoadName = "Black out";
+OnLoadMission = "上陸地点周辺の障害を排除しろ";
+loadScreen = "loadScreen.jpg";
+overviewPicture = "loadScreen.jpg";
+
+class CfgNotifications
+{
+
+	class Task1Accomplished
+	{
+		title = "TASK ACCOMPLISHED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "指揮車両の破壊";
+		color[] = {0.6,0.8,0.4,1};
+	};
+
+	class Task2Accomplished
+	{
+		title = "TASK ACCOMPLISHED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "発射機の破壊";
+		color[] = {0.6,0.8,0.4,1};
+	};
+
+	class Task3Accomplished
+	{
+		title = "TASK ACCOMPLISHED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "信号弾発射及び合流";
+		color[] = {0.6,0.8,0.4,1};
+	};
+
+};
+
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Миссия  выполнена";
+		subtitle = "上陸支援完了";
+		description = "";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+};

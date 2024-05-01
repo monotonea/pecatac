@@ -1,0 +1,36 @@
+//ACEスペクテーター　descriptionに書く
+// respawn = "bird"; respawnTemplates[] = {"ace_spectator"};
+
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "You successfully completed all mission objectives.";
+	};
+	class End2
+	{
+		title = "Mission failed";
+		subtitle = "";
+		description = "";
+	};
+};
+
+class CfgRadio
+{
+  sounds[] = {};
+  class Radio2
+  {
+    name = "Radio2";
+    sound[] = {"sound\21r14.ogg", db+0, 1.0};
+    title = $STR_cwr2_cwc21_radio13;
+  };
+  class Radio4
+  {
+    name = "Radio4";
+    sound[] = {"sound\21r15.ogg", db+0, 1.0};
+    title = $STR_cwr2_cwc21_radio14;
+  };
+};
+ 

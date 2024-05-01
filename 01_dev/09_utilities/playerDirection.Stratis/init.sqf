@@ -1,0 +1,2 @@
+
+execVM "playerdirection.sqf";

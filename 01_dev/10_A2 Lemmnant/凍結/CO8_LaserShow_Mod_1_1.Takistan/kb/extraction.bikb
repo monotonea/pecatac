@@ -1,0 +1,40 @@
+class Sentences
+{
+
+	class extraction_P_0
+	{
+		text = "$STR_EP1_extraction_P_0";
+		speech[] = {"\ca\dubbing_e\spe2_laser_show\extraction\extraction_P_0.ogg"};
+		class Arguments {};
+		
+	};
+
+	class extraction_C_0
+	{
+		text = "$STR_EP1_extraction_C_0";
+		speech[] = {"\ca\dubbing_e\spe2_laser_show\extraction\extraction_C_0.ogg"};
+		class Arguments {};
+		
+	};
+
+	class extraction_P_1
+	{
+		text = "$STR_EP1_extraction_P_1";
+		speech[] = {"\ca\dubbing_e\spe2_laser_show\extraction\extraction_P_1.ogg"};
+		class Arguments {};
+		
+	};
+
+	class extraction_P_2
+	{
+		text = "$STR_EP1_extraction_P_2";
+		speech[] = {"\ca\dubbing_e\spe2_laser_show\extraction\extraction_P_2.ogg"};
+		class Arguments {};
+		
+	};
+
+};
+class Arguments{};
+class Special{};
+startWithVocal[] = {hour};
+startWithConsonant[] = {europe, university};

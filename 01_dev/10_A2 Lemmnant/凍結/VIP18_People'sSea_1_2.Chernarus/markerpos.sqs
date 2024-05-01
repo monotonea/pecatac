@@ -1,0 +1,6 @@
+#loop1
+"TrackMarker1" setmarkerpos (getpos HMMHV1);
+"TrackMarker1" setmarkerdir (getdir HMMHV1);
+"TrackMarker2" setmarkerpos (getpos golf1);
+"TrackMarker2" setmarkerdir (getdir golf1);
+goto "loop1"

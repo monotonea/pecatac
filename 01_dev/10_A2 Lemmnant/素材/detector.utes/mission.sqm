@@ -1,0 +1,207 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"cacharacters2",
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters2",
+		"utes"
+	};
+	randomSeed=12383299;
+	class Intel
+	{
+		startWeather=0.39999998;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=10;
+		minute=20;
+	};
+	class Groups
+	{
+		items=5;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3531.2786,18.89999,3544.1191};
+					special="NONE";
+					id=0;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					init="this allowDamage false";
+				};
+			};
+		};
+		class Item1
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3522.5107,18.777237,3656.1379};
+					azimut=181.321;
+					id=1;
+					side="EAST";
+					vehicle="MVD_Soldier";
+					leader=1;
+					skill=0.60000002;
+					text="rus1";
+					init="this disableAI ""MOVE"";";
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3531.0569,18.844786,3655.5208};
+					azimut=181.32135;
+					id=2;
+					side="EAST";
+					vehicle="MVD_Soldier";
+					leader=1;
+					skill=0.60000002;
+					init="this disableAI ""MOVE"";";
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3527.5203,18.5504,3679.0945};
+					id=3;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					leader=1;
+					skill=0.60000002;
+					init="this disableAI ""MOVE"";";
+				};
+			};
+		};
+		class Item4
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3463.7795,19,3580.4985};
+					id=4;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					init="_nul=[]spawn{while{true}do{player sideChat format[""%1"",rus1 knowsAbout player]}}";
+				};
+			};
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={3487.6926,19,3636.8606};
+			a=500;
+			b=500;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			name="trg1";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=13236741;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=3441313;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=10695117;
+	class Intel
+	{
+		startWeather=0.40000001;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=14;
+		minute=20;
+	};
+};

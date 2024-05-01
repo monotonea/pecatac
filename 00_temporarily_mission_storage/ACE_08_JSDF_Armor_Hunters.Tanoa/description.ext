@@ -1,0 +1,39 @@
+﻿class Header
+{
+    gameType = COOP; 
+    minPlayers = 2; 
+    maxPlayers = 10; 
+};
+
+
+class CfgNotifications
+{
+	class Task1Accomplished
+	{
+		title = "TASK ACCOMPLISHED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "全ＢＭＰ－３を撃破";
+		color[] = {0.6,0.8,0.4,1};
+	};
+	class Task2Accomplished
+	{
+		title = "TASK ACCOMPLISHED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "敵部隊を撃退";
+		color[] = {0.6,0.8,0.4,1};
+	};
+	class Caution1Failed
+	{
+		title = "TASK FAILED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIconfailed_ca.paa";
+		description = "第１小隊が壊滅";
+		color[] = {0.9,0.1,0.1,1};
+	};
+	class Caution2Failed
+	{
+		title = "TASK FAILED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIconfailed_ca.paa";
+		description = "第２小隊が壊滅";
+		color[] = {0.9,0.1,0.1,1};
+	};
+};

@@ -1,0 +1,653 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"cacharacters2",
+		"chernarus",
+		"CA_Modules_ARTY",
+		"caweapons",
+		"CATracked",
+		"CATracked2_BMP3",
+		"CATracked2_2S6M_Tunguska",
+		"CAWheeled2_BTR90",
+		"ca_missions_secops"
+	};
+	addOnsAuto[]=
+	{
+		"CA_Modules_ARTY",
+		"caweapons",
+		"cacharacters2",
+		"CATracked",
+		"CATracked2_BMP3",
+		"CATracked2_2S6M_Tunguska",
+		"CAWheeled2_BTR90",
+		"ca_missions_secops",
+		"chernarus"
+	};
+	randomSeed=2499759;
+	class Intel
+	{
+		startWeather=0;
+		forecastWeather=0;
+		year=2008;
+		month=10;
+		day=11;
+		hour=12;
+		minute=0;
+	};
+	class Groups
+	{
+		items=14;
+		class Item0
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5121.0757,305.45612,5635.2295};
+					id=0;
+					side="LOGIC";
+					vehicle="BIS_ARTY_Logic";
+					leader=1;
+					skill=0.60000002;
+					text="myARTY";
+					synchronizations[]={1};
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={5362.8794,308.97992,5636.6875};
+					special="NONE";
+					id=1;
+					side="WEST";
+					vehicle="M119";
+					player="PLAY G";
+					leader=1;
+					skill=0.60000002;
+					init="Howitzers = group this;";
+					synchronizations[]={0};
+				};
+				class Item1
+				{
+					position[]={5380.7397,309.09433,5615.1396};
+					special="NONE";
+					id=2;
+					side="WEST";
+					vehicle="M119";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={5345.6265,308.18094,5614.4819};
+					special="NONE";
+					id=3;
+					side="WEST";
+					vehicle="M119";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=11;
+				class Item0
+				{
+					position[]={4601.4063,339,10154.872};
+					special="NONE";
+					id=4;
+					side="EAST";
+					vehicle="RU_Soldier_SL";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.59999996;
+				};
+				class Item1
+				{
+					position[]={4602.3672,339,10143.212};
+					id=5;
+					side="EAST";
+					vehicle="RU_Soldier_AT";
+					rank="SERGEANT";
+					skill=0.46666664;
+				};
+				class Item2
+				{
+					position[]={4604.3662,339,10143.212};
+					id=6;
+					side="EAST";
+					vehicle="RU_Soldier_LAT";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item3
+				{
+					position[]={4606.3662,339,10143.212};
+					id=7;
+					side="EAST";
+					vehicle="RU_Soldier_GL";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item4
+				{
+					position[]={4608.3662,339,10143.212};
+					id=8;
+					side="EAST";
+					vehicle="RU_Soldier_Marksman";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item5
+				{
+					position[]={4610.3662,339,10143.212};
+					id=9;
+					side="EAST";
+					vehicle="RU_Soldier_MG";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item6
+				{
+					position[]={4612.3672,339,10143.212};
+					id=10;
+					side="EAST";
+					vehicle="RU_Soldier_AT";
+					rank="CORPORAL";
+					skill=0.33333331;
+				};
+				class Item7
+				{
+					position[]={4614.3662,339,10143.212};
+					id=11;
+					side="EAST";
+					vehicle="RU_Soldier_AR";
+					skill=0.2;
+				};
+				class Item8
+				{
+					position[]={4616.3672,339,10143.212};
+					id=12;
+					side="EAST";
+					vehicle="RU_Soldier_LAT";
+					skill=0.2;
+				};
+				class Item9
+				{
+					position[]={4618.3672,339,10143.212};
+					id=13;
+					side="EAST";
+					vehicle="RU_Soldier_GL";
+					skill=0.2;
+				};
+				class Item10
+				{
+					position[]={4620.3672,339,10143.212};
+					id=14;
+					side="EAST";
+					vehicle="RU_Soldier";
+					skill=0.2;
+				};
+			};
+		};
+		class Item3
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4458.0122,339,10209.677};
+					special="NONE";
+					id=15;
+					side="EAST";
+					vehicle="T72_RU";
+					leader=1;
+					skill=0.60000002;
+					ammo=0;
+					synchronizations[]={0};
+				};
+			};
+		};
+		class Item4
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4571.9443,339,10371.301};
+					special="NONE";
+					id=16;
+					side="EAST";
+					vehicle="BMP3";
+					leader=1;
+					skill=0.60000002;
+					ammo=0;
+					synchronizations[]={0};
+				};
+			};
+		};
+		class Item5
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4485.5679,339,10309.301};
+					special="NONE";
+					id=17;
+					side="EAST";
+					vehicle="2S6M_Tunguska";
+					leader=1;
+					skill=0.60000002;
+					ammo=0;
+					synchronizations[]={0};
+				};
+			};
+		};
+		class Item6
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4632.354,339,10086.207};
+					special="NONE";
+					id=18;
+					side="EAST";
+					vehicle="BTR90";
+					leader=1;
+					skill=0.60000002;
+					ammo=0;
+					synchronizations[]={0};
+				};
+			};
+		};
+		class Item7
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4530.2661,339,10211.527};
+					special="NONE";
+					id=19;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="ArtyTgtLogic";
+					synchronizations[]={0};
+				};
+			};
+		};
+		class Item8
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5567.5493,289.22147,5637.1719};
+					special="NONE";
+					id=22;
+					side="LOGIC";
+					vehicle="BIS_ARTY_Logic";
+					leader=1;
+					skill=0.60000002;
+					text="myARTY_SOM";
+					synchronizations[]={23};
+				};
+			};
+		};
+		class Item9
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={5406.8027,309.14468,5600.1318};
+					special="NONE";
+					id=20;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					text="caller";
+					init="this addWeapon ""Binocular""; this addWeapon ""LaserDesignator""; this addMagazine ""LaserBatteries"";{this addMagazine _x}forEach shells;";
+					description="SOM MAN";
+					synchronizations[]={21};
+				};
+				class Item1
+				{
+					position[]={5418.4375,308.98651,5582.1709};
+					id=24;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item10
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5643.3057,260.70319,5601.0044};
+					special="NONE";
+					id=21;
+					side="LOGIC";
+					vehicle="SecOpManager";
+					leader=1;
+					skill=0.60000002;
+					text="SOM1";
+					init="this setVariable [""settings"", [[], true, nil, nil, false]];";
+					synchronizations[]={20};
+				};
+			};
+		};
+		class Item11
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5420.0605,309.54999,5636.1846};
+					special="NONE";
+					id=23;
+					side="WEST";
+					vehicle="M119";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					synchronizations[]={22};
+				};
+			};
+		};
+		class Item12
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4943.4219,336.34436,5437.3818};
+					special="NONE";
+					id=25;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					init="targetPos = getPosASL ArtyTgtLogic;[myARTY,false] call BIS_ARTY_F_SetShellSpawn;";
+				};
+			};
+		};
+		class Item13
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5025.9922,329.32336,5438.2324};
+					special="NONE";
+					id=26;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					init="shells = [  ""30Rnd_105mmHE_M119"",  ""30Rnd_105mmWP_M119"",  ""30Rnd_105mmSADARM_M119"",  ""30Rnd_105mmLASER_M119"",  ""30Rnd_105mmSMOKE_M119"",   ""30Rnd_105mmILLUM_M119""];";
+				};
+			};
+		};
+	};
+	class Sensors
+	{
+		items=10;
+		class Item0
+		{
+			position[]={5004.0317,343.60742,5329.9819};
+			a=0;
+			b=0;
+			activationBy="ALPHA";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			text="Call Arty";
+			expActiv="[myARTY,targetPos,heTemplate] call BIS_ARTY_F_ExecuteTemplateMission;";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={5023.3647,342.19742,5315.9526};
+			a=0;
+			b=0;
+			activationBy="BRAVO";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			text="Set HE";
+			expActiv="heTemplate = [""IMMEDIATE"", ""HE"", 0,30];";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={5041.667,339.67844,5315.9526};
+			a=0;
+			b=0;
+			activationBy="CHARLIE";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			text="Set WP";
+			expActiv="heTemplate = [""IMMEDIATE"", ""WP"", 0,30];";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={5059.9683,337.10162,5316.1807};
+			a=0;
+			b=0;
+			activationBy="DELTA";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			text="Set SADARM";
+			expActiv="heTemplate = [""IMMEDIATE"", ""SADARM"", 0,30];";
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={5079.8711,334.73315,5315.7256};
+			a=0;
+			b=0;
+			activationBy="ECHO";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			text="Set LASER";
+			expActiv="heTemplate = [""IMMEDIATE"", ""LASER"", 0,30];";
+			class Effects
+			{
+			};
+		};
+		class Item5
+		{
+			position[]={5097.2578,332.80893,5315.4951};
+			a=0;
+			b=0;
+			activationBy="FOXTROT";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			text="Set Illumination";
+			expActiv="heTemplate = [""IMMEDIATE"", ""ILLUM"", 0,30];";
+			class Effects
+			{
+			};
+		};
+		class Item6
+		{
+			position[]={5117.1602,330.29108,5315.9526};
+			a=0;
+			b=0;
+			activationBy="GOLF";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			text="Set SMOKE";
+			expActiv="heTemplate = [""IMMEDIATE"", ""SMOKE"", 0,30];";
+			class Effects
+			{
+			};
+		};
+		class Item7
+		{
+			position[]={5235.7285,312.19403,5423.0977};
+			a=0;
+			b=0;
+			age="UNKNOWN";
+			expCond="som1 getVariable ""initDone""";
+			expActiv="[[""artillery_barrage""], player, [[myARTY_SOM, [1,2,3,4,5,6,7,8,9]]]] call BIS_SOM_addSupportRequestFunc;hint ""init done""";
+			class Effects
+			{
+			};
+		};
+		class Item8
+		{
+			position[]={5275.8857,317.94241,5396.0991};
+			a=0;
+			b=0;
+			activationBy="INDIA";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			text="+1 Artillery Barrage SecOp";
+			expActiv="[[""artillery_barrage""],caller, [[myARTY_SOM, [1,2,3,4,5,6,7,8,9]]]] call BIS_SOM_addSupportRequestFunc;";
+			class Effects
+			{
+			};
+		};
+		class Item9
+		{
+			position[]={5299.9316,318.30603,5396.5952};
+			a=0;
+			b=0;
+			activationBy="JULIET";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			text="Map Click Teleport";
+			expActiv="onMapSingleClick ""player setPos _pos; onMapSingleClick """""""";"";";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"chernarus"
+	};
+	addOnsAuto[]=
+	{
+		"chernarus"
+	};
+	randomSeed=13520270;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"chernarus"
+	};
+	addOnsAuto[]=
+	{
+		"chernarus"
+	};
+	randomSeed=12403225;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"chernarus"
+	};
+	addOnsAuto[]=
+	{
+		"chernarus"
+	};
+	randomSeed=4837443;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};

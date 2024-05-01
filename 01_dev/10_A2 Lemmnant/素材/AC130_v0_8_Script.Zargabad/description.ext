@@ -1,0 +1,19 @@
+//describtion.ext for Lurchi's AC-130 Script
+
+//Dialog
+#include "LDL_ac130\Dialog\dialog.hpp"
+
+//Titles
+//Note: If your mission already has a RscTitles add the line "#include "LDL_ac130\Includes\RscTitles.hpp" to the existing RscTitles.
+class RscTitles
+{
+	#include "LDL_ac130\RscTitles\RscTitles.hpp"
+};
+	
+//Sounds
+//Note: If your mission already has a CfgSounds add the line "#include "LDL_ac130\Includes\CfgSounds.hpp" to the existing CfgSounds.
+class CfgSounds
+{
+	sounds[] = {};
+	#include "LDL_ac130\Sounds\CfgSounds.hpp"
+};

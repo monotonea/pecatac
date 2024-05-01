@@ -1,0 +1,6 @@
+
+respawn = "BIRD";
+respawndelay = 4;
+respawnDialog = 0;
+respawnTemplates[] = {"ace_spectator"};
+disabledAI = 0;

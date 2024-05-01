@@ -1,0 +1,40 @@
+class CfgNotifications
+{
+	class Task1Current
+	{
+		title = "CURRENT TASK";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+		description = "RETRIVE THE DOCUMENT";
+		color[] = {1,1,1,1};
+	};
+	
+	class TaskCanceled
+	{
+		title = "TASK CANCELED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIconcanceled_ca.paa";
+		description = "THIS TASK IS CANCELED.";
+		color[] = {0.75,0.75,0.75,1};
+	};
+	class TaskCreated
+	{
+		title = "TASK CREATED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIconcreated_ca.paa";
+		description = "New task is assigned to you.";
+		color[] = {1,1,1,1};
+	};
+	class Task1Accomplished
+	{
+		title = "TASK ACCOMPLISHED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "RETRIVE THE DOCUMENT";
+		color[] = {0.6,0.8,0.4,1};
+	};
+	class Task2Failed
+	{
+		title = "TASK FAILED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIconfailed_ca.paa";
+		description = "HOLD LZ Connor";
+		color[] = {0.8,0.4,0.4,1};
+	};
+};
+respawnTemplates[] = {"ace_spectator"};

@@ -1,0 +1,70 @@
+class CfgDebriefing
+{ 
+    class End1
+    {
+        title = "Mission Completed";
+        subtitle = "";
+        description = "作戦は成功した";
+    };
+    class End2
+    {
+        title = "Mission Failed";
+        subtitle = "";
+        description = "作戦は失敗した";
+    };
+};
+
+
+//	ACE治療システムを選択制に
+class Params
+{
+//	メディカルシステムのレベル
+    class ace_medical_level
+	{			
+        title = "Medical Level";
+        ACE_setting = 1;
+        values[] = {1, 2};
+        texts[] =  {"Basic", "Advanced"};
+        default = 1;
+	};
+//	アドバンスド負傷システム（ファーストエイド後に傷が再び開くかどうか）ベーシックのときは無視される
+	class ace_medical_enableAdvancedWounds
+	{	
+        title = "Advanced Wounds";
+        ACE_setting = 1;
+        values[] = {0, 1};
+        texts[] =  {"Disable","Enable"};
+        default = 0;
+	};
+// どこでPAKを使うことができるか？
+    class ace_medical_useLocation_PAK { 
+        title = "Where can medics use the PAK?";
+        ACE_setting = 1;
+        values[] = {0,1,2,3}; //    0:どこでも、1:救急車だけ、2:医療施設だけ、3:医療施設と救急車、4:使用不可
+        texts[] =  {"Anywhere", "Medical vehicle","Medical facility","Medical vehicle and facility"};
+        default = 0;
+    };
+};
+class ACE_Settings 
+{
+	class ace_medical_useLocation_SurgicalKit {		// サージカルキットを使える場所　
+		ACE_setting = 1											
+		value = 0;					//0:どこでも、1:救急車だけ、2:医療施設だけ、3:医療施設と救急車 
+	};
+	class ace_medical_consumeItem_PAK {			// PAK使用後に減るかどうか　
+		ACE_setting = 1											
+		value = 1;					//0:減らない、1:減る
+	};
+	class ace_medical_consumeItem_SurgicalKit {		// サージカルキット使用後に減るかどうか　		
+		ACE_setting = 1											
+		value = 0;					//0:減らない、1:減る
+	};
+	class ace_medical_useCondition_PAK {			// PAKを使用できる条件
+		ACE_setting = 1											
+		value = 1;					//0:いつでも、1:ファーストエイド完了時のみ
+	};
+	class ace_medical_useCondition_SurgicalKit {		// サージカルキットを使用できる条件
+		ACE_setting = 1											
+		value = 1;					//0:いつでも、1:ファーストエイド完了時のみ
+	};
+};

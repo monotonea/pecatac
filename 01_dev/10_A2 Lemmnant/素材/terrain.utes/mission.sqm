@@ -1,0 +1,196 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"cacharacters2",
+		"chernarus",
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters2",
+		"utes"
+	};
+	randomSeed=9376020;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+	class Groups
+	{
+		items=5;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3511.2068,18.411413,3670.0647};
+					id=0;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					init="nul = [30] execvm ""logicgen.sqf"";";
+					description="the argument is resolution of markers";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2853.0383,0.32388562,3049.9583};
+					id=1;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					leader=1;
+					skill=0.60000002;
+					text="startPos";
+					description="put this guy bottom left of the area";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4084.7192,0.18539146,4180.5615};
+					id=2;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					leader=1;
+					skill=0.60000002;
+					text="endPos";
+					description="put this guy upper right of the area";
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2812.6833,70.827728,3813.2969};
+					special="NONE";
+					id=3;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					leader=1;
+					skill=0.60000002;
+					text="highest";
+					description="put this guy where the highest in the area";
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3222.615,2.5185504,3331.3149};
+					id=4;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					leader=1;
+					skill=0.60000002;
+					text="lowest";
+					description="put this guy where the lowest in the area";
+				};
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"chernarus",
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=15397185;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"chernarus",
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=10122387;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"chernarus",
+		"utes"
+	};
+	addOnsAuto[]=
+	{
+		"utes"
+	};
+	randomSeed=960873;
+	class Intel
+	{
+		startWeather=0.25;
+		forecastWeather=0.25;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+	};
+};

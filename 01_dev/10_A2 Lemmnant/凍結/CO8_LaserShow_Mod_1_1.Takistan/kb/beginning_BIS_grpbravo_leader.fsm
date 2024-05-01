@@ -1,0 +1,91 @@
+/*%FSM<COMPILE "C:\Bis\fsmeditor\scriptedFSM.cfg, PREDLOHA">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"React",0,4346,-148.442688,-132.013092,-48.442719,-82.013107,0.000000,"React"};
+item1[] = {"",7,210,-102.438477,48.426529,-94.438538,56.426514,0.000000,""};
+item2[] = {"__",8,218,-245.799591,27.887707,-155.799591,77.887695,0.000000,"-"};
+item3[] = {"END",1,250,-249.361267,105.329407,-149.361450,155.329422,0.000000,"END"};
+item4[] = {"Alfa_ready_to_engage",4,218,0.000000,150.000000,300.000000,200.000000,1.000000,"Alfa ready to engage. Moving toward the objective, over"};
+item5[] = {"Bravo_ready_to_move",1,250,350.000000,187.000000,650.000000,237.000000,0.000000,"Bravo ready to move in, approaching village, over."};
+link0[] = {0,1};
+link1[] = {1,2};
+link2[] = {1,4};
+link3[] = {2,3};
+link4[] = {4,5};
+globals[] = {0.000000,0,0,0,0,640,480,2,10,6316128,1,-395.949066,712.081299,795.476807,-312.553558,873,899,1};
+window[] = {2,-1,-1,-1,-1,808,-1208,-186,72,3,890};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "PREDLOHA";
+  class States
+  {
+    /*%FSM<STATE "React">*/
+    class React
+    {
+      name = "React";
+      itemno = 0;
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Alfa_ready_to_engage">*/
+        class Alfa_ready_to_engage
+        {
+          itemno = 4;
+          priority = 1.000000;
+          to="Bravo_ready_to_move";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(_sentenceId in [""beginning_P_0""]);"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "__">*/
+        class __
+        {
+          itemno = 2;
+          priority = 0.000000;
+          to="END";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "END">*/
+    class END
+    {
+      name = "END";
+      itemno = 3;
+      init = /*%FSM<STATEINIT""">*/"//hint""Unexpected Exception""" \n
+       "" \n
+       "debugLog ""VD31- here B"";"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Bravo_ready_to_move">*/
+    class Bravo_ready_to_move
+    {
+      name = "Bravo_ready_to_move";
+      itemno = 5;
+      init = /*%FSM<STATEINIT""">*/"_this kbTell [BIS_grpmain_leader, _topic,""beginning_Q_0""];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="React";
+  finalStates[] =
+  {
+    "END",
+    "Bravo_ready_to_move",
+  };
+};
+/*%FSM</COMPILE>*/
