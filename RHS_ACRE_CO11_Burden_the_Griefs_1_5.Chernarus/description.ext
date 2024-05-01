@@ -50,6 +50,7 @@ class CfgNotifications
 		description = "Secure POW";
 		color[] = {0.8,0.4,0.4,1};
 	};
-};respawn = "bird";
-respawnTemplates[] = {"ace_spectator"};
+};
+
+//respawn = "bird";respawnTemplates[] = {"ace_spectator"};
 overviewText = "Eliminate a rebel leader with a support from UH-1Y";

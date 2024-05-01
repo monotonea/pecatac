@@ -16,7 +16,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={16178.957,477.64722,9814.709};
+		pos[]={16055.145,403.59515,10081.07};
 		dir[]={-0.38484171,-0.40363923,0.83006829};
 		up[]={-0.16978879,0.91490048,0.36621878};
 		aside[]={0.90725547,4.5614433e-007,0.42062724};
@@ -206,6 +206,55 @@ randomSeed=7500559;
 class ScenarioData
 {
 	author="Monotone";
+	respawn=1;
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
+					class value
+					{
+						items=3;
+						class Item0
+						{
+							class data
+							{
+								singleType="STRING";
+								value="ace_spectator";
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								singleType="STRING";
+								value="EndMission";
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								singleType="STRING";
+								value="Spectator";
+							};
+						};
+					};
+				};
+			};
+		};
+		nAttributes=1;
+	};
 };
 class Intro
 {
@@ -2176,6 +2225,7 @@ class Mission
 			};
 			id=143;
 			type="CUP_B_M2StaticMG_MiniTripod_US";
+			atlOffset=-0.00059509277;
 		};
 		class Item24
 		{
@@ -3584,14 +3634,14 @@ class Mission
 						angles[]={6.2605233,0,0.046633169};
 					};
 					side="West";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 						name="uavD";
 					};
 					id=155;
 					type="B_UAV_AI";
-					atlOffset=7.6293945e-006;
+					atlOffset=147.2594;
 				};
 				class Item1
 				{
@@ -3602,14 +3652,13 @@ class Mission
 						angles[]={6.2605233,0,0.046633169};
 					};
 					side="West";
-					flags=4;
 					class Attributes
 					{
 						name="uavG";
 					};
 					id=156;
 					type="B_UAV_AI";
-					atlOffset=7.6293945e-006;
+					atlOffset=147.41336;
 				};
 			};
 			class Attributes
@@ -3648,7 +3697,7 @@ class Mission
 				};
 			};
 			id=154;
-			atlOffset=7.6293945e-006;
+			atlOffset=-0.0001449585;
 		};
 		class Item27
 		{
@@ -3669,7 +3718,7 @@ class Mission
 			};
 			id=157;
 			type="B_UAV_01_F";
-			atlOffset=7.6293945e-006;
+			atlOffset=-0.0001449585;
 		};
 	};
 	class Connections

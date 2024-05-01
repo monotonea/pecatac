@@ -20,7 +20,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={12278.781,693.10571,8411.1201};
+		pos[]={12277.293,685.66467,8420.4717};
 		dir[]={0.022984536,-0.61773324,0.78606838};
 		up[]={0.018055888,0.78635156,0.6175158};
 		aside[]={0.9995845,-5.0072958e-007,-0.029227093};
@@ -234,6 +234,55 @@ randomSeed=1389649;
 class ScenarioData
 {
 	author="Monotone";
+	respawn=1;
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
+					class value
+					{
+						items=3;
+						class Item0
+						{
+							class data
+							{
+								singleType="STRING";
+								value="ace_spectator";
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								singleType="STRING";
+								value="EndMission";
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								singleType="STRING";
+								value="Spectator";
+							};
+						};
+					};
+				};
+			};
+		};
+		nAttributes=1;
+	};
 };
 class Mission
 {

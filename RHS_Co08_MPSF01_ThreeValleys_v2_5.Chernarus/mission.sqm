@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=129;
+	toggles=1;
 	class ItemIDProvider
 	{
 		nextID=1010;
@@ -17,15 +17,41 @@ class EditorData
 	class Camera
 	{
 		pos[]={13177.705,339.77094,5106.1211};
-		dir[]={0.17832974,-0.5687812,0.8029238};
-		up[]={0.12332154,0.82248878,0.55525118};
-		aside[]={0.97621226,0,-0.21681717};
+		dir[]={-0.41860282,-0.72861964,0.54211402};
+		up[]={-0.44531071,0.68491834,0.57670164};
+		aside[]={0.79150015,-1.1047814e-007,0.6111716};
 	};
 };
 binarizationWanted=0;
 sourceName="RHS_Co08_MPSF01_ThreeValleys_v2_5";
 addons[]=
 {
+	"A3_Ui_F",
+	"rhsgref_c_troops",
+	"rhs_c_weapons",
+	"ace_compat_rhs_afrf3",
+	"A3_Weapons_F",
+	"ace_optics",
+	"acre_main",
+	"A3_Characters_F",
+	"A3_Weapons_F_Items",
+	"ace_medical_engine",
+	"ace_medical_treatment",
+	"rhs_c_troops",
+	"rhsgref_c_vehicles_ret",
+	"A3_Soft_F_Offroad_01",
+	"A3_Weapons_F_Bootcamp_Ammoboxes",
+	"A3_Modules_F_Intel",
+	"rhsusf_c_troops",
+	"rhsusf_c_weapons",
+	"ace_compat_rhs_usf3_arsenal",
+	"ace_realisticnames",
+	"ace_compat_rhs_usf3",
+	"ace_compat_rhs_usf3_nightvision",
+	"A3_Supplies_F_Exp_Ammoboxes",
+	"ace_dragging",
+	"A3_Modules_F_Effects",
+	"CUP_Buildings_Config"
 };
 class AddonsMetaData
 {
@@ -195,6 +221,55 @@ randomSeed=14849427;
 class ScenarioData
 {
 	author="Type90J";
+	respawn=1;
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
+					class value
+					{
+						items=3;
+						class Item0
+						{
+							class data
+							{
+								singleType="STRING";
+								value="ace_spectator";
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								singleType="STRING";
+								value="EndMission";
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								singleType="STRING";
+								value="Spectator";
+							};
+						};
+					};
+				};
+			};
+		};
+		nAttributes=1;
+	};
 };
 class Intro
 {

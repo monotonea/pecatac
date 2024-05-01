@@ -43,6 +43,4 @@ class CfgNotifications
 		color[] = {0.8,0.4,0.4,1};
 	};
 };
-respawn = "BIRD";
-respawnTemplates[] = {"ace_spectator"};
-overviewText = "";
+//respawn = "bird";respawnTemplates[] = {"ace_spectator"};

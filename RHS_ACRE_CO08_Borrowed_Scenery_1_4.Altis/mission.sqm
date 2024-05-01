@@ -172,6 +172,55 @@ randomSeed=9101177;
 class ScenarioData
 {
 	author="Monotone";
+	respawn=1;
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
+					class value
+					{
+						items=3;
+						class Item0
+						{
+							class data
+							{
+								singleType="STRING";
+								value="ace_spectator";
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								singleType="STRING";
+								value="EndMission";
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								singleType="STRING";
+								value="Spectator";
+							};
+						};
+					};
+				};
+			};
+		};
+		nAttributes=1;
+	};
 };
 class Intro
 {
@@ -3037,13 +3086,14 @@ class Mission
 						angles[]={6.1993828,0,6.2338929};
 					};
 					side="West";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 						name="uavD";
 					};
 					id=126;
 					type="B_UAV_AI";
+					atlOffset=209.07884;
 				};
 				class Item1
 				{
@@ -3054,13 +3104,13 @@ class Mission
 						angles[]={6.1993828,0,6.2338929};
 					};
 					side="West";
-					flags=4;
 					class Attributes
 					{
 						name="uavG";
 					};
 					id=127;
 					type="B_UAV_AI";
+					atlOffset=209.22859;
 				};
 			};
 			class Attributes
@@ -3099,6 +3149,7 @@ class Mission
 				};
 			};
 			id=125;
+			atlOffset=-3.528595e-005;
 		};
 		class Item38
 		{
@@ -3119,6 +3170,7 @@ class Mission
 			};
 			id=128;
 			type="B_UAV_01_F";
+			atlOffset=-3.528595e-005;
 		};
 	};
 };

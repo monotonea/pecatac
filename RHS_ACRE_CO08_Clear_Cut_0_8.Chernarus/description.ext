@@ -36,7 +36,7 @@ class CfgNotifications
 		color[] = {0.8,0.4,0.4,1};
 	};
 };
-respawn = "bird";
-respawnTemplates[] = {"ace_spectator"};
+
+//respawn = "bird";respawnTemplates[] = {"ace_spectator"};
 
 overviewText = "Launch a offensive operation against the enemy larking in the mountains.";

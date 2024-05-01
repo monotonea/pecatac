@@ -12,14 +12,14 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={11445.2,273.81049,20984.438};
-		dir[]={0.55938429,-0.46779895,0.68429047};
-		up[]={0.29607269,0.8838349,0.36218342};
-		aside[]={0.77422881,0,-0.63290584};
+		pos[]={11340.223,347.12997,20663.225};
+		dir[]={0.099745467,-0.55361587,0.82677895};
+		up[]={0.06630946,0.83277118,0.54963106};
+		aside[]={0.99280256,-2.1314918e-008,-0.11977517};
 	};
 };
 binarizationWanted=0;
-sourceName="test";
+sourceName="RHS_ACRE_PvC08_Defion";
 addons[]=
 {
 	"rhsusf_c_troops",
@@ -188,6 +188,55 @@ randomSeed=8928372;
 class ScenarioData
 {
 	author="Monotone";
+	respawn=1;
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
+					class value
+					{
+						items=3;
+						class Item0
+						{
+							class data
+							{
+								singleType="STRING";
+								value="ace_spectator";
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								singleType="STRING";
+								value="EndMission";
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								singleType="STRING";
+								value="Spectator";
+							};
+						};
+					};
+				};
+			};
+		};
+		nAttributes=1;
+	};
 };
 class Mission
 {
@@ -1730,13 +1779,14 @@ class Mission
 						angles[]={0,3.4552283,0};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						name="veh1D";
 					};
 					id=39;
 					type="rhs_msv_crew";
-					atlOffset=0.58000183;
+					atlOffset=1.5258789e-005;
 				};
 				class Item1
 				{
@@ -2024,7 +2074,7 @@ class Mission
 					};
 					id=155;
 					type="O_UAV_AI";
-					atlOffset=763.62817;
+					atlOffset=763.62805;
 				};
 				class Item1
 				{
@@ -2039,7 +2089,7 @@ class Mission
 					};
 					id=156;
 					type="O_UAV_AI";
-					atlOffset=763.62817;
+					atlOffset=763.7818;
 				};
 			};
 			class Attributes
@@ -2078,7 +2128,7 @@ class Mission
 				};
 			};
 			id=41;
-			atlOffset=763.62817;
+			atlOffset=763.62689;
 		};
 		class Item8
 		{
@@ -2124,6 +2174,7 @@ class Mission
 					};
 					id=120;
 					type="rhs_msv_emr_sergeant";
+					atlOffset=7.6293945e-006;
 				};
 				class Item1
 				{
@@ -2180,6 +2231,7 @@ class Mission
 			{
 			};
 			id=119;
+			atlOffset=7.6293945e-006;
 		};
 		class Item11
 		{
@@ -2552,7 +2604,7 @@ class Mission
 			};
 			id=148;
 			type="HighCommandSubordinate";
-			atlOffset=7.6293945e-006;
+			atlOffset=1.5258789e-005;
 		};
 		class Item20
 		{
@@ -2650,7 +2702,7 @@ class Mission
 			};
 			id=154;
 			type="O_UAV_01_F";
-			atlOffset=763.62817;
+			atlOffset=763.62689;
 		};
 		class Item22
 		{
