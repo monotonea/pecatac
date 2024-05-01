@@ -1,0 +1,49 @@
+﻿//ACEスペクテーター　descriptionに書く
+// respawn = "bird"; respawnTemplates[] = {"ace_spectator"};
+
+author="PeCa Tactical Lowbrow";
+OnLoadName = "RHS Sweep3";
+
+//	overviewText="";
+
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "You successfully completed all mission objectives.";
+	};
+	class End2
+	{
+		title = "Mission failed";
+		subtitle = "";
+		description = "Hostage was killed";
+	};
+};
+
+//	ミッションパラメータ選択
+class Params
+{
+	class time		//paramsArray[0]	スタートタイムの選択
+	{
+		title = "Start time";
+		values[] = {-7,0,6,12};
+		texts[] = {"Dawn","Noon","Dusk","Night"};
+	default = 0;
+	};
+	class skill		//paramsArray[1]	AIスキル
+	{		
+		title = "AI Skill";
+		values[] = {0,0.25,0.5,0.75,1};
+		texts[] = {"0.0 (low)","0.25","0.5","0.75","1 (high)"};
+	default = 0.75;
+	};
+	class aiming		//paramsArray[2]	AI射撃精度
+	{		
+		title = "Aiming accuracy";
+		values[] = {0,0.25,0.5,0.75,1};
+		texts[] = {"0.0 (low)","0.25","0.5","0.75","1 (high)"};
+	default = 0.25;
+	};
+};
