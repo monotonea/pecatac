@@ -16,7 +16,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4483.998,72.448975,10188.501};
+		pos[]={4479.9702,35.126225,10223.185};
 		dir[]={0.011735909,-0.69989598,0.7141481};
 		up[]={0.011500232,0.71424443,0.69980085};
 		aside[]={0.99986428,1.6007107e-010,-0.016431089};
@@ -1848,6 +1848,19 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -1859,7 +1872,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -1872,7 +1885,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item1
@@ -2023,6 +2036,19 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -2034,7 +2060,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2047,7 +2073,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item2
@@ -2055,7 +2081,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4479.7285,11.145848,10247.202};
+						position[]={4479.729,11.145835,10247.202};
 					};
 					side="West";
 					flags=5;
@@ -2198,6 +2224,19 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -2209,7 +2248,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2222,7 +2261,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item3
@@ -2230,7 +2269,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4479.7246,10.894636,10244.783};
+						position[]={4479.7251,10.894623,10244.783};
 					};
 					side="West";
 					flags=5;
@@ -2373,6 +2412,19 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -2384,7 +2436,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2397,7 +2449,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item4
@@ -2405,7 +2457,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4481.3955,11.099182,10247.202};
+						position[]={4481.396,11.099168,10247.202};
 					};
 					side="West";
 					flags=5;
@@ -2539,10 +2591,22 @@ class Mission
 					};
 					id=121;
 					type="rhsusf_army_ocp_arb_rifleman";
-					atlOffset=1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="speaker";
 							expression="_this setspeaker _value;";
@@ -2555,7 +2619,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2568,7 +2632,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item5
@@ -2576,7 +2640,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4481.416,10.846267,10244.771};
+						position[]={4481.416,10.846265,10244.771};
 					};
 					side="West";
 					flags=5;
@@ -2710,10 +2774,22 @@ class Mission
 					};
 					id=122;
 					type="rhsusf_army_ocp_arb_rifleman";
-					atlOffset=1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="speaker";
 							expression="_this setspeaker _value;";
@@ -2726,7 +2802,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2739,7 +2815,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item6
@@ -2876,6 +2952,19 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -2887,7 +2976,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2900,7 +2989,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item7
@@ -2908,7 +2997,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4483.1426,10.797918,10244.771};
+						position[]={4483.1431,10.797905,10244.771};
 					};
 					side="West";
 					flags=5;
@@ -3037,6 +3126,19 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -3048,7 +3150,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -3061,7 +3163,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 			};
@@ -3083,17 +3185,16 @@ class Mission
 					class PositionInfo
 					{
 						position[]={2470.2373,23.110275,6742.7695};
-						angles[]={6.1993828,0,6.2338929};
+						angles[]={6.1993747,0,6.2338972};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						name="uavD";
 					};
 					id=126;
 					type="B_UAV_AI";
-					atlOffset=209.07884;
 				};
 				class Item1
 				{
@@ -3101,16 +3202,16 @@ class Mission
 					class PositionInfo
 					{
 						position[]={2470.2285,23.260025,6742.7578};
-						angles[]={6.1993828,0,6.2338929};
+						angles[]={6.1993747,0,6.2338972};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						name="uavG";
 					};
 					id=127;
 					type="B_UAV_AI";
-					atlOffset=209.22859;
 				};
 			};
 			class Attributes
@@ -3149,28 +3250,26 @@ class Mission
 				};
 			};
 			id=125;
-			atlOffset=-3.528595e-005;
 		};
 		class Item38
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4480.8105,11.614978,10250.8};
-				angles[]={6.1993828,0,6.2338929};
+				position[]={4480.8105,11.615013,10250.8};
+				angles[]={6.1993747,0,6.2338972};
 			};
 			side="West";
 			flags=6;
 			class Attributes
 			{
-				init="this allowDamage false;this setCaptive true";
+				init="this allowDamage false;this setCaptive true;";
 				name="uav";
 				reportRemoteTargets=1;
 				reportOwnPosition=1;
 			};
 			id=128;
 			type="B_UAV_01_F";
-			atlOffset=-3.528595e-005;
 		};
 	};
 };

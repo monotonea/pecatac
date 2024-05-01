@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=129;
 	class ItemIDProvider
 	{
 		nextID=777;
@@ -1916,7 +1916,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7474.9097,217.87271,5210.2007};
+						position[]={7474.9102,217.87271,5210.2007};
 					};
 					side="West";
 					flags=7;
@@ -2055,9 +2055,23 @@ class Mission
 					};
 					id=765;
 					type="rhsusf_army_ocp_arb_rifleman";
+					atlOffset=1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="speaker";
 							expression="_this setspeaker _value;";
@@ -2070,7 +2084,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2083,7 +2097,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item1
@@ -2091,7 +2105,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7474.8706,217.59933,5207.228};
+						position[]={7474.8701,217.59935,5207.228};
 					};
 					side="West";
 					flags=5;
@@ -2234,6 +2248,19 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -2245,7 +2272,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2258,7 +2285,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item2
@@ -2266,7 +2293,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7476.6382,217.62654,5208.353};
+						position[]={7476.6382,217.62656,5208.353};
 					};
 					side="West";
 					flags=5;
@@ -2405,9 +2432,23 @@ class Mission
 					};
 					id=767;
 					type="rhsusf_army_ocp_arb_rifleman";
+					atlOffset=1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="speaker";
 							expression="_this setspeaker _value;";
@@ -2420,7 +2461,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2433,7 +2474,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item3
@@ -2441,7 +2482,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7476.6343,217.40089,5205.9341};
+						position[]={7476.6338,217.40089,5205.9336};
 					};
 					side="West";
 					flags=5;
@@ -2580,9 +2621,23 @@ class Mission
 					};
 					id=768;
 					type="rhsusf_army_ocp_arb_rifleman";
+					atlOffset=1.5258789e-005;
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="speaker";
 							expression="_this setspeaker _value;";
@@ -2595,7 +2650,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2608,7 +2663,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item4
@@ -2754,6 +2809,19 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -2765,7 +2833,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2778,7 +2846,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item5
@@ -2786,7 +2854,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7478.3257,217.31995,5205.9224};
+						position[]={7478.3262,217.31996,5205.9229};
 					};
 					side="West";
 					flags=5;
@@ -2924,6 +2992,19 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -2935,7 +3016,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2948,7 +3029,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item6
@@ -2956,7 +3037,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7480.0737,217.45216,5208.313};
+						position[]={7480.0742,217.45215,5208.313};
 					};
 					side="West";
 					flags=5;
@@ -3085,6 +3166,19 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -3096,7 +3190,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -3109,7 +3203,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item7
@@ -3117,7 +3211,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7480.0522,217.23018,5205.9224};
+						position[]={7480.0518,217.23024,5205.9229};
 					};
 					side="West";
 					flags=5;
@@ -3246,6 +3340,19 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -3257,7 +3364,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -3270,7 +3377,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 			};
@@ -3278,6 +3385,7 @@ class Mission
 			{
 			};
 			id=764;
+			atlOffset=1.5258789e-005;
 		};
 		class Item32
 		{
