@@ -1,2 +1,0 @@
-respawn = "bird";
-respawnTemplates[] = {"ace_spectator"};

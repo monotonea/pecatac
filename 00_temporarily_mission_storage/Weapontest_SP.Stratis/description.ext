@@ -1,4 +1,0 @@
-Respawn = INSTANT;
-RespawnDelay = 5;
-RespawnVehicleDelay = 30;
-RespawnDialog = 1;
